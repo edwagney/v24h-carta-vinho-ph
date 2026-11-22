@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta de Vinhos | ENNOVIN • Adega VINHO24H</title>
-    
-    <!-- Fontes Google: Playfair Display (Títulos elegantes) e Plus Jakarta Sans (Leitura limpa e moderna) -->
+    <title>Carta de Vinhos | ENNOVIN • Unidade VINHO24H</title>
+
+    <!-- Fontes Google: Playfair Display (Títulos editoriais) e Plus Jakarta Sans (Leitura limpa e moderna) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         /* =====================================================================
-           1. VARIÁVEIS DE CORES E ESTILOS (FÁCIL DE PERSONALIZAR)
+           1. VARIÁVEIS DE CORES E ESTILOS (ESTILO EDITORIAL FIRSTLEAF)
            ===================================================================== */
         :root {
             --cor-fundo: #FAF8F5;          /* Creme editorial suave */
-            --cor-cartao: #FFFFFF;         /* Branco puro para os cards */
-            --cor-borda: #EAE5DC;          /* Linha sutil de divisão */
-            --cor-texto-principal: #1C1917;/* Preto carvão suave */
-            --cor-texto-secundario: #57534E;/* Cinza quente para descrições */
-            --cor-vinho: #7A1628;          /* Bordô elegante da marca */
-            --cor-vinho-escuro: #580E1B;   /* Hover dos botões */
-            --cor-vinho-suave: #FDF2F4;    /* Fundo claro para destaques */
+            --cor-cartao: #FFFFFF;         /* Branco puro */
+            --cor-superficie: #F4EFE7;     /* Bege suave de contraste */
+            --cor-borda: #E8E1D5;          /* Divisória delicada */
+            --cor-texto-principal: #1C1917;/* Carvão escuro */
+            --cor-texto-secundario: #57534E;/* Cinza quente */
+            --cor-vinho: #7A1628;          /* Bordô principal */
+            --cor-vinho-escuro: #580E1B;   /* Hover */
+            --cor-vinho-suave: #FDF2F4;    /* Realce suave */
             --cor-dourado: #C59B27;        /* Dourado de destaque */
-            --cor-dourado-suave: #FBF6E6;  /* Fundo claro para selos */
-            
+            --cor-dourado-suave: #FBF6E6;  /* Fundo para selos */
+
             --fonte-titulo: 'Playfair Display', Georgia, serif;
             --fonte-texto: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --sombra-card: 0 8px 24px rgba(28, 25, 23, 0.06);
-            --sombra-hover: 0 14px 32px rgba(122, 22, 40, 0.12);
+            --sombra-card: 0 8px 24px rgba(28, 25, 23, 0.05);
+            --sombra-hover: 0 16px 36px rgba(122, 22, 40, 0.12);
         }
 
         /* =====================================================================
-           2. RESET E CONFIGURAÇÕES GERAIS
+           2. RESET E BASE
            ===================================================================== */
         * {
             box-sizing: border-box;
@@ -66,13 +67,13 @@
 
         .container {
             width: 100%;
-            max-width: 1140px;
+            max-width: 1180px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         /* =====================================================================
-           3. CABEÇALHO SUPERIOR (STICKY)
+           3. CABEÇALHO SUPERIOR FIXO
            ===================================================================== */
         .header {
             position: sticky;
@@ -101,20 +102,18 @@
             font-size: 0.72rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.18em;
+            letter-spacing: 0.16em;
             color: var(--cor-vinho);
         }
 
         .brand-top span {
             font-weight: 500;
-            text-transform: lowercase;
-            letter-spacing: 0.05em;
             color: var(--cor-texto-secundario);
         }
 
         .brand-main {
             font-family: var(--fonte-titulo);
-            font-size: 1.55rem;
+            font-size: 1.48rem;
             font-weight: 700;
             color: var(--cor-texto-principal);
             letter-spacing: -0.02em;
@@ -144,7 +143,7 @@
             align-items: center;
             gap: 6px;
             background-color: var(--cor-dourado-suave);
-            border: 1px solid rgba(197, 155, 39, 0.4);
+            border: 1px solid rgba(197, 155, 39, 0.45);
             color: #785A0A;
             font-size: 0.75rem;
             font-weight: 700;
@@ -153,157 +152,193 @@
             white-space: nowrap;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 820px) {
             .nav-links {
                 display: flex;
             }
             .brand-main {
-                font-size: 1.75rem;
+                font-size: 1.65rem;
             }
         }
 
         /* =====================================================================
-           4. HERO SECTION (BANNER PRINCIPAL)
+           4. INTRO EDITORIAL + DIRETÓRIO DE COLEÇÕES (GUARDA-CHUVA FIRSTLEAF)
            ===================================================================== */
-        .hero {
-            position: relative;
-            background-color: #1F1215;
-            color: #FFFFFF;
-            padding: 64px 0 72px;
-            overflow: hidden;
+        .collections-hero {
+            background: linear-gradient(180deg, #FFFFFF 0%, var(--cor-fundo) 100%);
+            border-bottom: 1px solid var(--cor-borda);
+            padding: 40px 0 44px;
         }
 
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.35;
+        .hero-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 32px;
         }
 
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(28, 12, 16, 0.92) 0%, rgba(122, 22, 40, 0.72) 100%);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 720px;
-        }
-
-        .hero-pill {
+        .hero-kicker {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background-color: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(6px);
+            background-color: var(--cor-vinho-suave);
+            border: 1px solid rgba(122, 22, 40, 0.16);
+            color: var(--cor-vinho);
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
             padding: 6px 14px;
             border-radius: 999px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #FDE68A;
-            margin-bottom: 20px;
+            margin-bottom: 14px;
         }
 
-        .hero h1 {
+        .hero-header h1 {
             font-family: var(--fonte-titulo);
-            font-size: 2.25rem;
+            font-size: 2.15rem;
             line-height: 1.15;
-            font-weight: 700;
-            margin-bottom: 16px;
-            letter-spacing: -0.01em;
+            color: var(--cor-texto-principal);
+            margin-bottom: 12px;
+            letter-spacing: -0.015em;
         }
 
-        .hero p {
-            font-size: 1.05rem;
-            color: #F5F5F4;
-            opacity: 0.92;
-            margin-bottom: 28px;
-            max-width: 600px;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background-color: var(--cor-dourado);
-            color: #1C1917;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 14px 26px;
-            border-radius: 12px;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-        }
-
-        .btn-primary:hover {
-            background-color: #D9AE34;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background-color: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: #FFFFFF;
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 13px 22px;
-            border-radius: 12px;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.22);
+        .hero-header p {
+            font-size: 1rem;
+            color: var(--cor-texto-secundario);
         }
 
         @media (min-width: 768px) {
-            .hero {
-                padding: 88px 0 96px;
+            .collections-hero {
+                padding: 52px 0 48px;
             }
-            .hero h1 {
-                font-size: 3.25rem;
+            .hero-header h1 {
+                font-size: 2.85rem;
             }
-            .hero p {
-                font-size: 1.15rem;
+            .hero-header p {
+                font-size: 1.08rem;
             }
         }
 
+        /* Grade dos 4 Cards-Atalho de Coleção (Tintos, Brancos, Rosés, Espumantes) */
+        .collection-directory {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        @media (min-width: 900px) {
+            .collection-directory {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 18px;
+            }
+        }
+
+        .collection-tile {
+            position: relative;
+            background-color: var(--cor-cartao);
+            border: 1px solid var(--cor-borda);
+            border-radius: 18px;
+            padding: 20px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: var(--sombra-card);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+            overflow: hidden;
+        }
+
+        .collection-tile::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: var(--tile-accent, var(--cor-vinho));
+        }
+
+        .collection-tile:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-hover);
+            border-color: var(--tile-accent, var(--cor-vinho));
+        }
+
+        .tile-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .tile-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 11px;
+            background-color: var(--tile-bg, var(--cor-vinho-suave));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .tile-count {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--cor-texto-secundario);
+            background-color: var(--cor-fundo);
+            border: 1px solid var(--cor-borda);
+            padding: 3px 9px;
+            border-radius: 999px;
+        }
+
+        .collection-tile h2 {
+            font-family: var(--fonte-titulo);
+            font-size: 1.25rem;
+            color: var(--cor-texto-principal);
+            margin-bottom: 4px;
+        }
+
+        .collection-tile p {
+            font-size: 0.84rem;
+            color: var(--cor-texto-secundario);
+            line-height: 1.45;
+        }
+
+        .tile-link {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--tile-accent, var(--cor-vinho));
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
         /* =====================================================================
-           5. BARRA DE FILTRO POR CATEGORIA (MOBILE-FIRST HORIZONTAL SCROLL)
+           5. BARRA DE FILTRO RÁPIDO POR COLEÇÃO
            ===================================================================== */
         .filter-bar-wrapper {
             background-color: var(--cor-cartao);
             border-bottom: 1px solid var(--cor-borda);
-            padding: 14px 0;
+            padding: 12px 0;
         }
 
         .filter-bar {
             display: flex;
             align-items: center;
+            justify-content: flex-start;
             gap: 10px;
             overflow-x: auto;
-            padding-bottom: 4px;
-            scrollbar-width: none; /* Oculta barra de rolagem no Firefox */
+            scrollbar-width: none;
+        }
+
+        @media (min-width: 768px) {
+            .filter-bar {
+                justify-content: center;
+            }
         }
 
         .filter-bar::-webkit-scrollbar {
-            display: none; /* Oculta barra de rolagem no Chrome/Safari */
+            display: none;
         }
 
         .filter-btn {
@@ -311,9 +346,9 @@
             background-color: var(--cor-fundo);
             color: var(--cor-texto-secundario);
             font-family: var(--fonte-texto);
-            font-size: 0.88rem;
+            font-size: 0.86rem;
             font-weight: 600;
-            padding: 9px 18px;
+            padding: 8px 17px;
             border-radius: 999px;
             cursor: pointer;
             white-space: nowrap;
@@ -329,28 +364,28 @@
             background-color: var(--cor-vinho);
             border-color: var(--cor-vinho);
             color: #FFFFFF;
-            box-shadow: 0 4px 12px rgba(122, 22, 40, 0.22);
+            box-shadow: 0 4px 12px rgba(122, 22, 40, 0.2);
         }
 
         /* =====================================================================
-           6. SEÇÕES DAS CATEGORIAS DA CARTA DE VINHOS
+           6. SEÇÕES DAS 4 CATEGORIAS (SEMPRE ORGANIZADAS COMO GUARDA-CHUVA)
            ===================================================================== */
         .catalog-section {
-            padding: 48px 0 24px;
-            scroll-margin-top: 80px;
+            padding: 46px 0 20px;
+            scroll-margin-top: 84px;
         }
 
         .section-header {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            margin-bottom: 28px;
-            padding-bottom: 16px;
+            gap: 6px;
+            margin-bottom: 24px;
+            padding-bottom: 14px;
             border-bottom: 1px solid var(--cor-borda);
         }
 
         .section-kicker {
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.15em;
@@ -376,43 +411,43 @@
             font-size: 0.8rem;
             font-weight: 600;
             color: var(--cor-texto-secundario);
-            background-color: #EFECE6;
+            background-color: var(--cor-superficie);
+            border: 1px solid var(--cor-borda);
             padding: 4px 12px;
             border-radius: 999px;
         }
 
         .section-desc {
-            font-size: 0.98rem;
+            font-size: 0.96rem;
             color: var(--cor-texto-secundario);
-            max-width: 680px;
+            max-width: 700px;
         }
 
-        /* Grid Responsivo de Cards */
         .wine-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 24px;
         }
 
-        @media (min-width: 640px) {
+        @media (min-width: 720px) {
             .wine-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 1080px) {
             .wine-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
 
         /* =====================================================================
-           7. CARD INDIVIDUAL DO VINHO (ESTILO EDITORIAL FIRSTLEAF)
+           7. CARD DE PRÉVIA DA PÁGINA DO VINHO (MODELO FIRSTLEAF)
            ===================================================================== */
         .wine-card {
             background-color: var(--cor-cartao);
             border: 1px solid var(--cor-borda);
-            border-radius: 20px;
+            border-radius: 22px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -425,103 +460,205 @@
             box-shadow: var(--sombra-hover);
         }
 
-        /* Área da Imagem da Garrafa */
+        /* Área Visual com Garrafa + Fundo Sutil da Região */
         .wine-card-media {
             position: relative;
-            height: 270px;
-            background: radial-gradient(circle at center, #FFFFFF 0%, #F3EFEA 100%);
+            height: 265px;
+            background: radial-gradient(circle at center, #FFFFFF 0%, #F2ECE3 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
             border-bottom: 1px solid var(--cor-borda);
+            overflow: hidden;
         }
 
-        .wine-card-media img {
-            max-height: 225px;
-            width: auto;
-            object-fit: contain;
-            filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.18));
-            transition: transform 0.3s ease;
+        .wine-region-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.18;
+            transition: transform 0.5s ease;
         }
 
-        .wine-card:hover .wine-card-media img {
+        .wine-card:hover .wine-region-bg {
             transform: scale(1.04);
         }
 
-        /* Selo no canto da imagem */
+        .wine-media-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(250, 248, 245, 0.55) 0%, rgba(244, 239, 231, 0.85) 100%);
+        }
+
+        .wine-bottle-link {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .wine-bottle-img {
+            max-height: 220px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 14px 18px rgba(28, 12, 16, 0.22));
+            transition: transform 0.3s ease;
+        }
+
+        .wine-card:hover .wine-bottle-img {
+            transform: translateY(-4px) scale(1.03);
+        }
+
         .wine-badge {
             position: absolute;
             top: 14px;
             left: 14px;
-            background-color: var(--cor-cartao);
+            z-index: 3;
+            background-color: rgba(255, 255, 255, 0.94);
             border: 1px solid var(--cor-borda);
             color: var(--cor-texto-principal);
             font-size: 0.72rem;
             font-weight: 700;
             padding: 4px 10px;
             border-radius: 999px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
         .wine-badge.destaque {
             background-color: var(--cor-dourado-suave);
-            border-color: rgba(197, 155, 39, 0.45);
+            border-color: rgba(197, 155, 39, 0.5);
             color: #785A0A;
         }
 
-        /* Corpo de Texto do Card */
+        .wine-style-pill {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            z-index: 3;
+            background-color: rgba(28, 25, 23, 0.78);
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 999px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* Corpo da Prévia do Vinho */
         .wine-card-body {
-            padding: 22px;
+            padding: 20px 22px 22px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
 
         .wine-origin {
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
             color: var(--cor-vinho);
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 6px;
+            letter-spacing: 0.07em;
+            margin-bottom: 5px;
         }
 
         .wine-title {
             font-family: var(--fonte-titulo);
-            font-size: 1.35rem;
+            font-size: 1.32rem;
             font-weight: 700;
             line-height: 1.25;
             color: var(--cor-texto-principal);
+            margin-bottom: 6px;
+        }
+
+        .wine-title a:hover {
+            color: var(--cor-vinho);
+        }
+
+        .wine-grapes {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--cor-texto-secundario);
             margin-bottom: 10px;
         }
 
         .wine-summary {
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             color: var(--cor-texto-secundario);
-            margin-bottom: 16px;
-            flex-grow: 1;
+            margin-bottom: 14px;
         }
 
-        /* Tags Sensoriais Rápidas */
-        .wine-tags {
+        /* Mini Mapa de Sabor (Prévia visual estilo Firstleaf) */
+        .flavor-preview {
+            background-color: var(--cor-fundo);
+            border: 1px solid var(--cor-borda);
+            border-radius: 14px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .flavor-row {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .flavor-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.73rem;
+            font-weight: 600;
+            color: var(--cor-texto-principal);
+        }
+
+        .flavor-labels span:last-child {
+            color: var(--cor-vinho);
+        }
+
+        .flavor-track {
+            width: 100%;
+            height: 6px;
+            background-color: #E5DDD0;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .flavor-fill {
+            height: 100%;
+            background-color: var(--cor-vinho);
+            border-radius: 999px;
+        }
+
+        .flavor-fill.gold {
+            background-color: var(--cor-dourado);
+        }
+
+        /* Prévia rápida de harmonização & serviço */
+        .pairing-preview {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+            margin-top: auto;
         }
 
-        .wine-tag {
-            font-size: 0.75rem;
+        .pairing-chip {
+            font-size: 0.74rem;
             font-weight: 600;
             color: var(--cor-texto-principal);
-            background-color: var(--cor-fundo);
+            background-color: var(--cor-cartao);
             border: 1px solid var(--cor-borda);
             padding: 4px 10px;
             border-radius: 8px;
         }
 
-        /* Botão de Ação para Página Individual */
         .wine-btn {
             display: flex;
             align-items: center;
@@ -530,8 +667,8 @@
             background-color: var(--cor-vinho);
             color: #FFFFFF;
             font-weight: 700;
-            font-size: 0.9rem;
-            padding: 13px 18px;
+            font-size: 0.88rem;
+            padding: 13px 16px;
             border-radius: 12px;
             transition: background-color 0.2s ease;
         }
@@ -540,71 +677,64 @@
             background-color: var(--cor-vinho-escuro);
         }
 
-        .wine-btn.modelo {
-            background-color: #EFECE6;
-            color: var(--cor-texto-principal);
+        .wine-btn.em-breve {
+            background-color: var(--cor-superficie);
+            color: var(--cor-texto-secundario);
+            cursor: default;
         }
 
-        .wine-btn.modelo:hover {
-            background-color: #E2DDD4;
-        }
-
-        /* Card Tracejado de Guia para Adicionar Novo Rótulo */
-        .add-slot-card {
-            border: 2px dashed #D6CFC2;
-            border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.5);
-            padding: 32px 24px;
+        /* Estado Vazio Elegante para Seções Ainda Sem Rótulos Ativos */
+        .empty-collection-card {
+            grid-column: 1 / -1;
+            background-color: rgba(255, 255, 255, 0.75);
+            border: 1px dashed #D6CCC0;
+            border-radius: 18px;
+            padding: 28px 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 16px;
             text-align: center;
-            min-height: 360px;
+        }
+
+        @media (min-width: 720px) {
+            .empty-collection-card {
+                flex-direction: row;
+                text-align: left;
+            }
+        }
+
+        .empty-collection-text h3 {
+            font-family: var(--fonte-titulo);
+            font-size: 1.15rem;
+            color: var(--cor-texto-principal);
+            margin-bottom: 4px;
+        }
+
+        .empty-collection-text p {
+            font-size: 0.9rem;
             color: var(--cor-texto-secundario);
         }
 
-        .add-slot-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            background-color: #EFECE6;
-            color: var(--cor-vinho);
-            font-size: 1.5rem;
+        .empty-collection-pill {
+            flex-shrink: 0;
+            font-size: 0.76rem;
             font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 14px;
-        }
-
-        .add-slot-card h3 {
-            font-family: var(--fonte-titulo);
-            font-size: 1.2rem;
-            color: var(--cor-texto-principal);
-            margin-bottom: 8px;
-        }
-
-        .add-slot-card p {
-            font-size: 0.86rem;
-            max-width: 260px;
-        }
-
-        .code-hint {
-            margin-top: 12px;
-            font-family: monospace;
-            font-size: 0.75rem;
-            background-color: #EFECE6;
-            padding: 4px 10px;
-            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
             color: var(--cor-vinho);
+            background-color: var(--cor-vinho-suave);
+            border: 1px solid rgba(122, 22, 40, 0.18);
+            padding: 7px 14px;
+            border-radius: 999px;
         }
 
         /* =====================================================================
-           8. SEÇÃO "COMO FUNCIONA A VINHO24H"
+           8. COMO FUNCIONA A VINHO24H
            ===================================================================== */
         .how-it-works {
-            margin-top: 48px;
+            margin-top: 44px;
             padding: 56px 0;
             background-color: var(--cor-cartao);
             border-top: 1px solid var(--cor-borda);
@@ -613,7 +743,7 @@
 
         .how-header {
             text-align: center;
-            max-width: 620px;
+            max-width: 640px;
             margin: 0 auto 36px;
         }
 
@@ -658,7 +788,7 @@
         }
 
         .step-card h3 {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             font-weight: 700;
             margin-bottom: 8px;
         }
@@ -695,7 +825,6 @@
             color: #A8A29E;
         }
 
-        /* Utilitário para esconder seções no filtro */
         .hidden-section {
             display: none !important;
         }
@@ -708,21 +837,18 @@
          ===================================================================== -->
     <header class="header">
         <div class="container header-inner">
-            <!-- Identidade Visual ENNOVIN • VINHO24H -->
             <a href="#" class="brand">
                 <span class="brand-top">ENNOVIN <span>• Unidade</span></span>
-                <span class="brand-main">VINHO24H</span>
+                <span class="brand-main">Adega VINHO24H</span>
             </a>
 
-            <!-- Menu de Navegação Rápida -->
-            <nav class="nav-links" aria-label="Categorias de Vinhos">
-                <a href="#tintos" data-nav-category="tintos">Tintos</a>
-                <a href="#brancos" data-nav-category="brancos">Brancos</a>
-                <a href="#roses" data-nav-category="roses">Rosés</a>
-                <a href="#espumantes" data-nav-category="espumantes">Espumantes</a>
+            <nav class="nav-links" aria-label="Coleções da Carta de Vinhos">
+                <a href="#tintos" onclick="irParaColecao('tintos')">Tintos</a>
+                <a href="#brancos" onclick="irParaColecao('brancos')">Brancos</a>
+                <a href="#roses" onclick="irParaColecao('roses')">Rosés</a>
+                <a href="#espumantes" onclick="irParaColecao('espumantes')">Espumantes</a>
             </nav>
 
-            <!-- Selo Comercial -->
             <div class="header-badge">
                 <span>🏷️</span> Preço Único 24h
             </div>
@@ -730,72 +856,102 @@
     </header>
 
     <!-- =====================================================================
-         BANNER PRINCIPAL (HERO SECTION)
+         PÁGINA GUARDA-CHUVA: VISÃO GERAL DAS 4 COLEÇÕES (MODELO FIRSTLEAF)
          ===================================================================== -->
-    <section class="hero">
-        <!-- Imagem de fundo de adega / vinhedos com fallback -->
-        <img 
-            src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1600&q=80" 
-            alt="Adega de vinhos selecionados VINHO24H" 
-            class="hero-bg"
-            onerror="this.style.display='none'"
-        >
-        <div class="hero-overlay"></div>
-
+    <section class="collections-hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-pill">
-                    <span>✨</span> Preço Único • Autoatendimento 24h
-                </div>
-                <h1>Sua Carta de Vinhos Inteligente e Descomplicada</h1>
+            <div class="hero-header">
+                <span class="hero-kicker">Residencial Portal das Hortênsias • Preço Único</span>
+                <h1>Explore Nossa Carta de Vinhos</h1>
                 <p>
-                    Escolha pelo estilo, descubra as notas de sabor em linguagem simples e aproveite o preço único da VINHO24H.
+                    Escolha pelo estilo abaixo, compare uma prévia do sabor e das harmonizações de cada garrafa e clique para abrir a ficha completa do rótulo.
                 </p>
-                <div class="hero-actions">
-                    <a href="#catalogo" class="btn-primary">
-                        Explorar Rótulos ↓
-                    </a>
-                    <a href="#como-funciona" class="btn-secondary">
-                        Como Funciona
-                    </a>
-                </div>
+            </div>
+
+            <!-- Diretório Visual das 4 Coleções -->
+            <div class="collection-directory">
+                <a href="#tintos" onclick="irParaColecao('tintos')" class="collection-tile" style="--tile-accent: #7A1628; --tile-bg: #FDF2F4;">
+                    <div>
+                        <div class="tile-top">
+                            <span class="tile-icon">🍷</span>
+                            <span class="tile-count" id="dir-count-tintos">0 rótulos</span>
+                        </div>
+                        <h2 style="margin-top: 12px;">Vinhos Tintos</h2>
+                        <p>Macios, frutados e envolventes para pizzas, massas e jantares.</p>
+                    </div>
+                    <span class="tile-link">Explorar Tintos →</span>
+                </a>
+
+                <a href="#brancos" onclick="irParaColecao('brancos')" class="collection-tile" style="--tile-accent: #B58918; --tile-bg: #FBF6E6;">
+                    <div>
+                        <div class="tile-top">
+                            <span class="tile-icon">🥂</span>
+                            <span class="tile-count" id="dir-count-brancos">0 rótulos</span>
+                        </div>
+                        <h2 style="margin-top: 12px;">Vinhos Brancos</h2>
+                        <p>Leves, cítricos e refrescantes para dias quentes e pratos leves.</p>
+                    </div>
+                    <span class="tile-link">Explorar Brancos →</span>
+                </a>
+
+                <a href="#roses" onclick="irParaColecao('roses')" class="collection-tile" style="--tile-accent: #B8475B; --tile-bg: #FFF0F3;">
+                    <div>
+                        <div class="tile-top">
+                            <span class="tile-icon">🌸</span>
+                            <span class="tile-count" id="dir-count-roses">0 rótulos</span>
+                        </div>
+                        <h2 style="margin-top: 12px;">Vinhos Rosés</h2>
+                        <p>Versáteis, delicados e equilibrados para qualquer momento.</p>
+                    </div>
+                    <span class="tile-link">Explorar Rosés →</span>
+                </a>
+
+                <a href="#espumantes" onclick="irParaColecao('espumantes')" class="collection-tile" style="--tile-accent: #8A6D1B; --tile-bg: #F9F3DF;">
+                    <div>
+                        <div class="tile-top">
+                            <span class="tile-icon">🍾</span>
+                            <span class="tile-count" id="dir-count-espumantes">0 rótulos</span>
+                        </div>
+                        <h2 style="margin-top: 12px;">Espumantes</h2>
+                        <p>Borbulhas finas e vibrantes para celebrar, petiscar e brindar.</p>
+                    </div>
+                    <span class="tile-link">Explorar Espumantes →</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- =====================================================================
-         BARRA DE FILTRO RÁPIDO POR CATEGORIA
+         BARRA DE FILTRO RÁPIDO
          ===================================================================== -->
     <div class="filter-bar-wrapper">
         <div class="container">
-            <div class="filter-bar" role="tablist" aria-label="Filtrar carta de vinhos">
-                <button class="filter-btn active" data-filter-category="todos" onclick="filtrarCategoria('todos', this)">🍷 Todos os Vinhos</button>
-                <button class="filter-btn" data-filter-category="tintos" onclick="filtrarCategoria('tintos', this)">Vinhos Tintos</button>
-                <button class="filter-btn" data-filter-category="brancos" onclick="filtrarCategoria('brancos', this)">Vinhos Brancos</button>
-                <button class="filter-btn" data-filter-category="roses" onclick="filtrarCategoria('roses', this)">Vinhos Rosés</button>
+            <div class="filter-bar" role="tablist" aria-label="Filtrar coleções da carta">
+                <button class="filter-btn active" data-filter-category="todos" onclick="filtrarCategoria('todos', this)">🍷 Todas as Coleções</button>
+                <button class="filter-btn" data-filter-category="tintos" onclick="filtrarCategoria('tintos', this)">Tintos</button>
+                <button class="filter-btn" data-filter-category="brancos" onclick="filtrarCategoria('brancos', this)">Brancos</button>
+                <button class="filter-btn" data-filter-category="roses" onclick="filtrarCategoria('roses', this)">Rosés</button>
                 <button class="filter-btn" data-filter-category="espumantes" onclick="filtrarCategoria('espumantes', this)">Espumantes</button>
             </div>
         </div>
     </div>
 
     <!-- =====================================================================
-         CONTEÚDO PRINCIPAL: AS 4 SEÇÕES DA CARTA DE VINHOS (CARREGADAS VIA catalogo.js)
+         AS 4 SESSÕES ORGANIZADAS DA CARTA (CARREGADAS VIA catalogo.js)
          ===================================================================== -->
     <main id="catalogo">
 
-        <!-- *****************************************************************
-             SEÇÃO 1: VINHOS TINTOS
-             ***************************************************************** -->
+        <!-- SESSÃO 1: VINHOS TINTOS -->
         <section id="tintos" class="catalog-section" data-category="tintos">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Seleção Especial</span>
+                    <span class="section-kicker">Coleção 01 • Seleção Especial</span>
                     <div class="section-title-row">
                         <h2>Vinhos Tintos</h2>
-                        <span class="section-count" id="count-tintos">Curadoria VINHO24H</span>
+                        <span class="section-count" id="count-tintos">Carregando...</span>
                     </div>
                     <p class="section-desc">
-                        Rótulos envolventes, macios e cheios de sabor. Escolhidos a dedo para acompanhar desde uma pizza descontraída até um jantar especial.
+                        Rótulos envolventes, macios e fáceis de gostar — confira abaixo a prévia de sabor e clique para ver todos os detalhes e harmonizações.
                     </p>
                 </div>
 
@@ -803,19 +959,17 @@
             </div>
         </section>
 
-        <!-- *****************************************************************
-             SEÇÃO 2: VINHOS BRANCOS
-             ***************************************************************** -->
+        <!-- SESSÃO 2: VINHOS BRANCOS -->
         <section id="brancos" class="catalog-section" data-category="brancos">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Leveza & Frescor</span>
+                    <span class="section-kicker">Coleção 02 • Leveza & Frescor</span>
                     <div class="section-title-row">
                         <h2>Vinhos Brancos</h2>
-                        <span class="section-count" id="count-brancos">Refrescantes</span>
+                        <span class="section-count" id="count-brancos">Carregando...</span>
                     </div>
                     <p class="section-desc">
-                        Frescos, leves e aromáticos. Ideais para dias quentes, entradas e pratos leves.
+                        Frescos, aromáticos e refrescantes para servir bem gelados, ideais para dias quentes, entradas, saladas e pratos leves.
                     </p>
                 </div>
 
@@ -823,19 +977,17 @@
             </div>
         </section>
 
-        <!-- *****************************************************************
-             SEÇÃO 3: VINHOS ROSÉS
-             ***************************************************************** -->
+        <!-- SESSÃO 3: VINHOS ROSÉS -->
         <section id="roses" class="catalog-section" data-category="roses">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Versatilidade na Taça</span>
+                    <span class="section-kicker">Coleção 03 • Versatilidade na Taça</span>
                     <div class="section-title-row">
                         <h2>Vinhos Rosés</h2>
-                        <span class="section-count" id="count-roses">Equilibrados</span>
+                        <span class="section-count" id="count-roses">Carregando...</span>
                     </div>
                     <p class="section-desc">
-                        Versáteis, refrescantes e equilibrados. O meio-termo perfeito entre a leveza do branco e a estrutura do tinto.
+                        O equilíbrio perfeito entre a leveza do branco e a fruta do tinto. Fáceis de combinar do aperitivo ao jantar.
                     </p>
                 </div>
 
@@ -843,19 +995,17 @@
             </div>
         </section>
 
-        <!-- *****************************************************************
-             SEÇÃO 4: ESPUMANTES
-             ***************************************************************** -->
+        <!-- SESSÃO 4: ESPUMANTES -->
         <section id="espumantes" class="catalog-section" data-category="espumantes">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Para Brindar</span>
+                    <span class="section-kicker">Coleção 04 • Para Brindar</span>
                     <div class="section-title-row">
                         <h2>Espumantes</h2>
-                        <span class="section-count" id="count-espumantes">Celebração</span>
+                        <span class="section-count" id="count-espumantes">Carregando...</span>
                     </div>
                     <p class="section-desc">
-                        Celebrativos, vibrantes e refrescantes. Perfeitos para brindar ou acompanhar petiscos e sobremesas.
+                        Celebrativos, vibrantes e versáteis. Perfeitos para brindar conquistas, acompanhar petiscos ou harmonizar com sobremesas.
                     </p>
                 </div>
 
@@ -864,13 +1014,13 @@
         </section>
 
         <!-- =====================================================================
-             SEÇÃO: COMO FUNCIONA A VINHO24H
+             SEÇÃO: COMO FUNCIONA A ADEGA VINHO24H
              ===================================================================== -->
         <section id="como-funciona" class="how-it-works">
             <div class="container">
                 <div class="how-header">
                     <span class="section-kicker">Autoatendimento Inteligente</span>
-                    <h2>Como Funciona a VINHO24H</h2>
+                    <h2>Como Funciona a Adega</h2>
                     <p class="section-desc" style="margin: 0 auto;">
                         Em parceria com a VINHO24H, a ENNOVIN traz para o Residencial Portal das Hortênsias uma experiência tão simples quanto abrir a geladeira de casa.
                     </p>
@@ -879,9 +1029,9 @@
                 <div class="steps-grid">
                     <div class="step-card">
                         <div class="step-number">1</div>
-                        <h3>Escolha no catálogo pelo seu gosto</h3>
+                        <h3>Escolha pela prévia do estilo</h3>
                         <p>
-                            Navegue pelas categorias e leia nossas descrições diretas, sem termos difíceis, para achar o vinho ideal para o seu momento.
+                            Navegue pelas coleções, compare as notas de sabor em linguagem simples e abra a página do rótulo para ver harmonizações salgadas e doces.
                         </p>
                     </div>
 
@@ -889,7 +1039,7 @@
                         <div class="step-number">2</div>
                         <h3>Preço único sem surpresas</h3>
                         <p>
-                            Todos os rótulos da adega possuem o mesmo valor. Você escolhe pelo sabor e pela ocasião, sem se preocupar com a conta.
+                            Todos os rótulos da adega possuem o mesmo valor. Você escolhe pelo paladar e pelo momento, sem se preocupar com diferença de preço.
                         </p>
                     </div>
 
@@ -897,7 +1047,7 @@
                         <div class="step-number">3</div>
                         <h3>Retire na adega e aproveite</h3>
                         <p>
-                            Disponível 24 horas por dia em sistema de autoatendimento prático e rápido. Pegue sua garrafa e brinde!
+                            Disponível 24 horas por dia em sistema de autoatendimento prático e rápido no condomínio. Pegue sua garrafa e brinde!
                         </p>
                     </div>
                 </div>
@@ -918,18 +1068,36 @@
     </footer>
 
     <!-- =====================================================================
-         CARREGAMENTO DO CATÁLOGO CENTRAL (catalogo.js) E RENDERIZAÇÃO AUTOMÁTICA
+         CARREGAMENTO DO CATÁLOGO CENTRAL (catalogo.js) E RENDERIZAÇÃO DAS PRÉVIAS
          ===================================================================== -->
     <script src="catalogo.js"></script>
     <script>
         const CONFIG_CATEGORIAS = {
-            tintos: { pasta: 'Tintos', corPlaceholder: '7A1628/FAF8F5' },
-            brancos: { pasta: 'Brancos', corPlaceholder: 'C59B27/1C1917' },
-            roses: { pasta: 'Roses', corPlaceholder: 'E18D96/1C1917' },
-            espumantes: { pasta: 'Espumantes', corPlaceholder: 'D4AF37/1C1917' }
+            tintos: {
+                pasta: 'Tintos',
+                corPlaceholder: '7A1628/FAF8F5',
+                tituloVazio: 'Novos Tintos em Curadoria',
+                textoVazio: 'Em breve novos rótulos tintos selecionados pela ENNOVIN estarão disponíveis nesta prateleira.'
+            },
+            brancos: {
+                pasta: 'Brancos',
+                corPlaceholder: 'C59B27/1C1917',
+                tituloVazio: 'Novos Brancos em Curadoria',
+                textoVazio: 'Estamos selecionando vinhos brancos leves e refrescantes para compor a próxima atualização da carta.'
+            },
+            roses: {
+                pasta: 'Roses',
+                corPlaceholder: 'E18D96/1C1917',
+                tituloVazio: 'Novos Rosés em Curadoria',
+                textoVazio: 'Em breve você encontrará rótulos rosés versáteis e equilibrados disponíveis aqui na adega.'
+            },
+            espumantes: {
+                pasta: 'Espumantes',
+                corPlaceholder: 'D4AF37/1C1917',
+                tituloVazio: 'Novos Espumantes em Curadoria',
+                textoVazio: 'Novos espumantes para celebrar os bons momentos estão sendo preparados para a próxima reposição.'
+            }
         };
-
-        let categoriasComVinhos = new Set();
 
         function escaparHtml(texto) {
             if (!texto) return '';
@@ -941,6 +1109,73 @@
                 .replace(/'/g, '&#39;');
         }
 
+        function extrairEstiloCurto(vinho) {
+            const analise = vinho.conhecimentoRotulo && vinho.conhecimentoRotulo.analiseTecnica ? vinho.conhecimentoRotulo.analiseTecnica : '';
+            const estiloMatch = analise.match(/Estilo:\s*([^|]+)/i);
+            const alcoolMatch = analise.match(/Teor alcoólico:\s*([^|]+)/i);
+            const partes = [];
+            if (estiloMatch) partes.push(estiloMatch[1].trim());
+            if (alcoolMatch) partes.push(alcoolMatch[1].trim());
+            return partes.join(' • ');
+        }
+
+        function montarBarrasSensoriais(vinho) {
+            const perfil = vinho.perfilSensorial;
+            if (!perfil) return '';
+
+            const itens = [
+                { chave: 'corpo', label: 'Corpo', ouro: false },
+                { chave: 'maciez', label: 'Maciez', ouro: false },
+                { chave: 'docura', label: 'Doçura', ouro: true }
+            ].filter(item => perfil[item.chave] && perfil[item.chave].rotulo);
+
+            if (itens.length === 0) return '';
+
+            const linhasHtml = itens.map(item => {
+                const dado = perfil[item.chave];
+                const pct = Math.max(8, Math.min(100, Number(dado.nivel) || 50));
+                return `
+                    <div class="flavor-row">
+                        <div class="flavor-labels">
+                            <span>${item.label}</span>
+                            <span>${escaparHtml(dado.rotulo)}</span>
+                        </div>
+                        <div class="flavor-track">
+                            <div class="flavor-fill ${item.ouro ? 'gold' : ''}" style="width: ${pct}%;"></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            return `<div class="flavor-preview">${linhasHtml}</div>`;
+        }
+
+        function montarChipsContexto(vinho) {
+            const chips = [];
+            const ctx = vinho.contexto || {};
+
+            if (Array.isArray(ctx.harmonizacaoSalgada) && ctx.harmonizacaoSalgada[0]) {
+                const salgadoCurto = ctx.harmonizacaoSalgada[0].split(' e ')[0].split('(')[0].trim();
+                chips.push(`🍕 ${salgadoCurto}`);
+            }
+            if (Array.isArray(ctx.harmonizacaoDoce) && ctx.harmonizacaoDoce[0]) {
+                const doceCurto = ctx.harmonizacaoDoce[0].split('(')[0].trim();
+                chips.push(`🍫 ${doceCurto}`);
+            }
+            if (ctx.temperatura) {
+                const tempCurta = ctx.temperatura.split('(')[0].trim();
+                chips.push(`❄️ ${tempCurta}`);
+            }
+
+            if (chips.length === 0 && Array.isArray(vinho.tags)) {
+                vinho.tags.slice(0, 3).forEach(t => chips.push(t));
+            }
+
+            return chips.slice(0, 3)
+                .map(c => `<span class="pairing-chip">${escaparHtml(c)}</span>`)
+                .join('');
+        }
+
         function criarCardVinho(vinho) {
             const cfg = CONFIG_CATEGORIAS[vinho.categoria];
             if (!cfg) return '';
@@ -948,41 +1183,86 @@
             const caminhoImagem = vinho.arquivoImagem
                 ? encodeURI(`${cfg.pasta}/Imagens/${vinho.arquivoImagem}`)
                 : '';
+            const urlPagina = vinho.arquivoPagina
+                ? encodeURI(`${cfg.pasta}/${vinho.arquivoPagina}`)
+                : '';
+
             const textoPlaceholder = encodeURIComponent(vinho.nome || 'Vinho Selecionado').replace(/'/g, '%27');
             const urlFallback = `https://placehold.co/260x540/${cfg.corPlaceholder}?text=${textoPlaceholder}`;
+
+            const fundoRegiaoHtml = vinho.imagemRegiao
+                ? `<img src="${escaparHtml(vinho.imagemRegiao)}" alt="" class="wine-region-bg" onerror="this.style.display='none'">`
+                : '';
 
             const seloHtml = vinho.seloDestaque
                 ? `<span class="wine-badge ${vinho.destaqueOuro ? 'destaque' : ''}">${escaparHtml(vinho.seloDestaque)}</span>`
                 : '';
 
-            const origemTexto = [vinho.bandeira, vinho.paisRegiao].filter(Boolean).join(' ');
-            const tagsHtml = (vinho.tags || [])
-                .slice(0, 4)
-                .map(tag => `<span class="wine-tag">${escaparHtml(tag)}</span>`)
-                .join('');
+            const estiloCurto = extrairEstiloCurto(vinho);
+            const estiloPillHtml = estiloCurto
+                ? `<span class="wine-style-pill">${escaparHtml(estiloCurto)}</span>`
+                : '';
 
-            const botaoHtml = vinho.arquivoPagina
-                ? `<a href="${encodeURI(`${cfg.pasta}/${vinho.arquivoPagina}`)}" class="wine-btn">Ver Detalhes e Harmonização →</a>`
-                : `<span class="wine-btn modelo" style="cursor: default;">Ficha Completa em Breve</span>`;
+            const origemTexto = [vinho.bandeira, vinho.paisRegiao].filter(Boolean).join(' ');
+            const uvasTexto = vinho.conhecimentoVinho && vinho.conhecimentoVinho.uvas
+                ? `<div class="wine-grapes">🍇 ${escaparHtml(vinho.conhecimentoVinho.uvas)}</div>`
+                : '';
+
+            const barrasHtml = montarBarrasSensoriais(vinho);
+            const chipsHtml = montarChipsContexto(vinho);
+
+            const tituloHtml = urlPagina
+                ? `<a href="${urlPagina}">${escaparHtml(vinho.nome)}</a>`
+                : escaparHtml(vinho.nome);
+
+            const mediaImgHtml = `
+                <img
+                    src="${caminhoImagem || urlFallback}"
+                    alt="Garrafa ${escaparHtml(vinho.nome)}"
+                    class="wine-bottle-img"
+                    onerror="this.onerror=null; this.src='${urlFallback}';"
+                >
+            `;
+
+            const mediaLinkHtml = urlPagina
+                ? `<a href="${urlPagina}" class="wine-bottle-link" aria-label="Abrir página de ${escaparHtml(vinho.nome)}">${mediaImgHtml}</a>`
+                : `<div class="wine-bottle-link">${mediaImgHtml}</div>`;
+
+            const botaoHtml = urlPagina
+                ? `<a href="${urlPagina}" class="wine-btn">Ver Página Completa e Harmonizações →</a>`
+                : `<span class="wine-btn em-breve">Página do Vinho em Preparação</span>`;
 
             return `
                 <article class="wine-card">
                     <div class="wine-card-media">
+                        ${fundoRegiaoHtml}
+                        <div class="wine-media-overlay"></div>
                         ${seloHtml}
-                        <img
-                            src="${caminhoImagem || urlFallback}"
-                            alt="Garrafa ${escaparHtml(vinho.nome)}"
-                            onerror="this.onerror=null; this.src='${urlFallback}';"
-                        >
+                        ${estiloPillHtml}
+                        ${mediaLinkHtml}
                     </div>
                     <div class="wine-card-body">
                         <span class="wine-origin">${escaparHtml(origemTexto || 'Seleção VINHO24H')}</span>
-                        <h3 class="wine-title">${escaparHtml(vinho.nome)}</h3>
+                        <h3 class="wine-title">${tituloHtml}</h3>
+                        ${uvasTexto}
                         <p class="wine-summary">${escaparHtml(vinho.resumoCard || '')}</p>
-                        ${tagsHtml ? `<div class="wine-tags">${tagsHtml}</div>` : ''}
+                        ${barrasHtml}
+                        ${chipsHtml ? `<div class="pairing-preview">${chipsHtml}</div>` : ''}
                         ${botaoHtml}
                     </div>
                 </article>
+            `;
+        }
+
+        function criarCardVazio(cfg) {
+            return `
+                <div class="empty-collection-card">
+                    <div class="empty-collection-text">
+                        <h3>${escaparHtml(cfg.tituloVazio)}</h3>
+                        <p>${escaparHtml(cfg.textoVazio)}</p>
+                    </div>
+                    <span class="empty-collection-pill">Em Breve na Adega</span>
+                </div>
             `;
         }
 
@@ -992,46 +1272,42 @@
                 : [];
             const vinhosAtivos = lista.filter(v => v && v.ativo === true);
 
-            categoriasComVinhos = new Set();
-
             Object.keys(CONFIG_CATEGORIAS).forEach(categoria => {
+                const cfg = CONFIG_CATEGORIAS[categoria];
                 const grid = document.getElementById(`grid-${categoria}`);
-                const secao = document.getElementById(categoria);
-                const contador = document.getElementById(`count-${categoria}`);
-                const btnFiltro = document.querySelector(`[data-filter-category="${categoria}"]`);
-                const linkNav = document.querySelector(`[data-nav-category="${categoria}"]`);
+                const contadorSecao = document.getElementById(`count-${categoria}`);
+                const contadorDiretorio = document.getElementById(`dir-count-${categoria}`);
 
                 const itens = vinhosAtivos.filter(v => v.categoria === categoria);
+                const textoRotulos = itens.length === 1 ? '1 rótulo' : `${itens.length} rótulos`;
 
-                if (itens.length > 0) {
-                    categoriasComVinhos.add(categoria);
-                    if (grid) grid.innerHTML = itens.map(criarCardVinho).join('');
-                    if (secao) secao.classList.remove('hidden-section');
-                    if (contador) contador.textContent = itens.length === 1 ? '1 rótulo disponível' : `${itens.length} rótulos disponíveis`;
-                    if (btnFiltro) btnFiltro.style.display = '';
-                    if (linkNav) linkNav.style.display = '';
-                } else {
-                    if (grid) grid.innerHTML = '';
-                    if (secao) secao.classList.add('hidden-section');
-                    if (btnFiltro) btnFiltro.style.display = 'none';
-                    if (linkNav) linkNav.style.display = 'none';
+                if (contadorDiretorio) {
+                    contadorDiretorio.textContent = itens.length > 0 ? textoRotulos : 'Em breve';
+                }
+
+                if (contadorSecao) {
+                    contadorSecao.textContent = itens.length > 0
+                        ? (itens.length === 1 ? '1 rótulo disponível' : `${itens.length} rótulos disponíveis`)
+                        : 'Em curadoria';
+                }
+
+                if (grid) {
+                    grid.innerHTML = itens.length > 0
+                        ? itens.map(criarCardVinho).join('')
+                        : criarCardVazio(cfg);
                 }
             });
         }
 
         function filtrarCategoria(categoriaSelecionada, botaoClicado) {
-            // 1. Atualiza o visual do botão ativo na barra de filtros
             const botoes = document.querySelectorAll('.filter-btn');
             botoes.forEach(btn => btn.classList.remove('active'));
-            botaoClicado.classList.add('active');
+            if (botaoClicado) botaoClicado.classList.add('active');
 
-            // 2. Mostra ou esconde apenas categorias que possuem vinhos ativos
             const secoes = document.querySelectorAll('.catalog-section');
             secoes.forEach(secao => {
                 const categoriaDaSecao = secao.getAttribute('data-category');
-                const temVinhos = categoriasComVinhos.has(categoriaDaSecao);
-
-                if (temVinhos && (categoriaSelecionada === 'todos' || categoriaDaSecao === categoriaSelecionada)) {
+                if (categoriaSelecionada === 'todos' || categoriaDaSecao === categoriaSelecionada) {
                     secao.classList.remove('hidden-section');
                 } else {
                     secao.classList.add('hidden-section');
@@ -1039,7 +1315,11 @@
             });
         }
 
-        // Inicializa a carta assim que a página carrega
+        function irParaColecao(categoria) {
+            const btnTodas = document.querySelector('[data-filter-category="todos"]');
+            filtrarCategoria('todos', btnTodas);
+        }
+
         renderizarCatalogo();
     </script>
 
