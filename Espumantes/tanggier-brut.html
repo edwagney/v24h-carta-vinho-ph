@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanggier Brut (Bodegas Lozano) | ENNOVIN • Adega VINHO24H Residencial Portal das Hortênsias</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: { 50: '#FDFCFA', 100: '#FAF8F5', 200: '#F3EFEA', 300: '#EAE5DC' },
+                        golddeep: { 50: '#FBF8EE', 100: '#F6EED5', 700: '#9A7818', 800: '#7D5E10', 900: '#574108' },
+                        champagne: { gold: '#C59B27', amber: '#E5B83B', light: '#FBF6E6' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bottle-shadow {
+            filter: drop-shadow(0 25px 30px rgba(60, 45, 10, 0.24));
+            transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .bottle-container:hover .bottle-shadow { transform: translateY(-6px) scale(1.02); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fadeIn 0.35s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-cream-100 text-stone-800 font-sans antialiased selection:bg-golddeep-800 selection:text-white">
+
+    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-cream-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+            <a href="../index.html" class="flex items-center gap-3 group" title="Voltar para a Carta de Vinhos">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-golddeep-800 text-white flex items-center justify-center shadow-sm group-hover:bg-golddeep-900 transition-colors">
+                    <i class="ph-fill ph-sparkle text-lg sm:text-xl text-champagne-amber"></i>
+                </div>
+                <div>
+                    <span class="block text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-golddeep-800">ENNOVIN • Unidade</span>
+                    <span class="font-serif text-lg sm:text-xl font-bold text-stone-900 tracking-tight">Adega VINHO24H</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-2 sm:gap-3">
+                <span class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-champagne-light border border-champagne-gold/30 text-stone-800 text-xs font-semibold">
+                    <i class="ph-fill ph-tag text-champagne-gold text-sm"></i>
+                    Preço Único • Autoatendimento 24h
+                </span>
+                <a href="../index.html" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-golddeep-800 hover:bg-golddeep-900 text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm">
+                    <i class="ph-bold ph-arrow-left text-sm"></i>
+                    <span>Carta</span>
+                </a>
+                <button onclick="copyPageLink()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white hover:bg-cream-200 border border-cream-300 text-stone-700 text-xs sm:text-sm font-medium transition-colors shadow-sm">
+                    <i class="ph ph-share-network text-base text-golddeep-800"></i>
+                    <span class="hidden sm:inline">Compartilhar</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-10 sm:pb-16">
+            <div class="bg-white rounded-3xl border border-cream-300 shadow-sm overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-5 relative min-h-[420px] sm:min-h-[520px] flex items-center justify-center p-8 sm:p-12 overflow-hidden bg-cream-200 bottle-container">
+                        <img
+                            src="./Imagens/regiao-la-mancha-espanha.jpg"
+                            alt="Vinhedos ensolarados na região de Castilla-La Mancha, Espanha"
+                            class="absolute inset-0 w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-700"
+                            onerror="this.style.display='none'"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-b from-cream-100/75 via-cream-100/50 to-cream-200/90"></div>
+                        <div class="absolute w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-champagne-gold/15 blur-xl"></div>
+
+                        <div class="absolute top-5 left-5 z-10 bg-white/90 backdrop-blur-sm border border-cream-300 px-3.5 py-1.5 rounded-full shadow-sm">
+                            <span class="text-xs font-bold tracking-wider uppercase text-stone-700">Special Cuvée Brut • 750ml</span>
+                        </div>
+
+                        <div class="relative z-10 flex flex-col items-center">
+                            <img
+                                src="./Imagens/ESPUMANTE LOZANO TANGGIER BRUT.png"
+                                alt="Garrafa de Espumante Tanggier Brut Bodegas Lozano"
+                                class="h-[340px] sm:h-[430px] w-auto object-contain bottle-shadow"
+                                onerror="this.onerror=null; this.src='https://placehold.co/320x680/7D5E10/FAF8F5?text=Tanggier%0ABrut';"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-stone-600 mb-3">
+                                <span class="inline-flex items-center gap-1.5 bg-cream-100 border border-cream-300 px-3 py-1 rounded-full">
+                                    <span>🇪🇸</span> Castilla-La Mancha, Espanha
+                                </span>
+                                <span class="text-stone-400">•</span>
+                                <span>Special Cuvée Brut</span>
+                            </div>
+
+                            <div class="inline-flex items-center gap-2 bg-champagne-light border border-champagne-gold/40 text-stone-900 px-3.5 py-1.5 rounded-xl mb-4">
+                                <span class="text-base">🥂</span>
+                                <span class="text-xs sm:text-sm font-bold text-stone-800">
+                                    Bodegas Lozano • Tradição Familiar Espanhola desde 1853
+                                </span>
+                            </div>
+
+                            <h1 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-stone-900 leading-[1.15] mb-4">
+                                Espumante Tanggier Brut
+                            </h1>
+
+                            <p class="text-base sm:text-lg text-stone-600 leading-relaxed mb-6">
+                                <strong class="text-golddeep-800 font-semibold">Fresco, delicado e frutado:</strong> um espumante espanhol seco (Brut) com aromas de pera e pêssego, borbulhas finas e textura leve — ideal para receber amigos ou acompanhar pratos leves.
+                            </p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mb-8">
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Estilo</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">Branco Brut</span>
+                                    <span class="block text-[11px] text-golddeep-800 font-medium">Seco & Fresco</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Álcool</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">10%–12% vol.</span>
+                                    <span class="block text-[11px] text-stone-500">Leve a médio</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Temperatura</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">6°C a 9°C</span>
+                                    <span class="block text-[11px] text-stone-500">Bem gelado</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Produtor</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">Bodegas Lozano</span>
+                                    <span class="block text-[11px] text-stone-500">Espanha</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-golddeep-800 text-white rounded-2xl p-5 sm:p-6 shadow-md relative overflow-hidden">
+                            <div class="absolute -right-6 -bottom-6 opacity-10">
+                                <i class="ph-fill ph-wine text-9xl"></i>
+                            </div>
+                            <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                <div>
+                                    <div class="inline-flex items-center gap-1.5 text-champagne-amber text-xs font-bold uppercase tracking-wider mb-1">
+                                        <i class="ph-fill ph-sparkle"></i>
+                                        Experiência Adega VINHO24H
+                                    </div>
+                                    <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Preço Único da Casa</h2>
+                                    <p class="text-golddeep-100 text-xs sm:text-sm mt-1">
+                                        Sem surpresas na hora de escolher: pegue na adega, escaneie e leve em segundos.
+                                    </p>
+                                </div>
+                                <a href="#harmonizacao" class="shrink-0 inline-flex items-center justify-center gap-2 bg-champagne-gold hover:bg-champagne-amber text-stone-950 font-bold text-sm px-5 py-3 rounded-xl transition-colors shadow-sm">
+                                    <span>Ver o que combina</span>
+                                    <i class="ph-bold ph-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-golddeep-800">O que esperar na taça</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
+                        Por que você vai gostar deste espumante?
+                    </h2>
+                    <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+                        Produzido na Espanha pela centenária família <strong>Lozano</strong>, o <strong>Tanggier Brut</strong> entrega exatamente o que se espera de um bom espumante branco seco: leveza, acidez equilibrada e sabor limpo de frutas brancas.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-golddeep-50 text-golddeep-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-sparkle text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Amarelo-palha com borbulhas finas</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Visual claro com reflexos esverdeados e borbulhas delicadas que deixam a taça elegante.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-golddeep-50 text-golddeep-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-sun text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Aroma de pera, pêssego e frescor mineral</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Perfume limpo e refrescante de frutas brancas e de caroço (<strong>pera e pêssego</strong>) com leve toque mineral.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-golddeep-50 text-golddeep-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-smiley text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Delicado e seco sem ser agressivo</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Fermentado em inox em baixa temperatura (sem carvalho), tem acidez viva equilibrada e final frutado agradável.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-golddeep-50 border border-golddeep-100 rounded-2xl p-4 sm:p-5 space-y-2">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <span class="text-xs font-bold uppercase tracking-wider text-golddeep-800 flex items-center gap-1.5">
+                                    <i class="ph-fill ph-users-three text-base"></i>
+                                    Ideal para o seu paladar?
+                                </span>
+                                <span class="text-xs font-bold text-stone-700 bg-white px-2.5 py-0.5 rounded-full border border-golddeep-100">
+                                    Clássico Brut Espanhol
+                                </span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                                <strong>Escolha certa</strong> se você quer um espumante <strong>seco</strong> tradicional, leve e elegante — sem doçura e ideal tanto como aperitivo quanto na hora das entradas e pratos leves.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-white rounded-3xl border border-cream-300 p-6 sm:p-9 shadow-sm">
+                    <div class="flex items-center justify-between border-b border-cream-300 pb-4 mb-6">
+                        <div>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Mapa de Sabor</h3>
+                            <p class="text-xs sm:text-sm text-stone-500">Guia visual rápido para você acertar na escolha</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-cream-100 text-stone-700 text-xs font-bold border border-cream-300">Seco & Delicado</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Corpo (Peso na boca)</span>
+                                <span class="text-golddeep-800">Leve a Médio</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-golddeep-800 rounded-full" style="width: 38%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Bem leve</span><span>Equilibrado</span><span>Encorpado</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Cremosidade das Borbulhas</span>
+                                <span class="text-golddeep-800">Delicada</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-golddeep-800 rounded-full" style="width: 72%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Sutil</span><span>Equilibrada</span><span>Bem cremosa</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Doçura (Classificação: Brut)</span>
+                                <span class="text-golddeep-800">Brut (Seco)</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-champagne-gold rounded-full" style="width: 20%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Extra Brut</span><span>Brut (seco)</span><span>Moscatel (doce)</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Frescor (Acidez)</span>
+                                <span class="text-golddeep-800">Vivo e Refrescante</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-golddeep-800 rounded-full" style="width: 78%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Suave</span><span>Equilibrado</span><span>Bem vibrante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 bg-champagne-light border border-champagne-gold/35 rounded-2xl p-4 flex items-start gap-3">
+                        <i class="ph-fill ph-thermometer-cold text-2xl text-champagne-gold shrink-0 mt-0.5"></i>
+                        <div class="text-xs sm:text-sm text-stone-800">
+                            <strong class="block font-bold text-stone-900">Dica de Ouro para servir:</strong>
+                            Deixe cerca de <strong>1h30 na geladeira</strong> antes de abrir (ideal por volta de 6°C a 9°C). Gelado ele destaca toda a elegância das frutas brancas!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="harmonizacao" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="bg-white rounded-3xl border border-cream-300 p-6 sm:p-10 lg:p-12 shadow-sm">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-golddeep-800">Do aperitivo à mesa</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Combina com o quê?</h2>
+                    <p class="text-stone-600 text-sm sm:text-base mt-2">
+                        Clássico para abrir a noite como aperitivo ou acompanhar frutos do mar, comida asiática, carnes brancas e sobremesas leves com frutas.
+                    </p>
+
+                    <div class="inline-flex p-1.5 bg-cream-200 rounded-full mt-6 border border-cream-300" role="tablist">
+                        <button onclick="filterPairing('all')" id="tab-all" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all bg-golddeep-800 text-white shadow-sm">
+                            Todos os Pratos
+                        </button>
+                        <button onclick="filterPairing('salgado')" id="tab-salgado" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-stone-700 hover:text-stone-900">
+                            🍤 Salgados
+                        </button>
+                        <button onclick="filterPairing('doce')" id="tab-doce" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-stone-700 hover:text-stone-900">
+                            🍐 Doces
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div id="card-salgado" class="bg-cream-100 rounded-2xl border border-cream-300 p-6 sm:p-7 animate-fade-in">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-11 h-11 rounded-2xl bg-golddeep-800 text-white flex items-center justify-center text-xl shadow-sm">🍤</div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-golddeep-800">Aperitivos & Jantar</span>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Harmonizações Salgadas</h3>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-stone-800">
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-golddeep-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Frutos do Mar & Asiática:</strong> Mariscos, atum selado, salmão, sushi e pratos orientais leves.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-golddeep-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Entradas & Carnes Brancas:</strong> Saladas frescas, carpaccio, frango assado com limão e ervas ou peixes brancos.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-golddeep-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Petiscos & Queijos:</strong> Castanhas, queijos frescos ou de massa branda (brie, camembert) e bruschettas.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="card-doce" class="bg-cream-100 rounded-2xl border border-cream-300 p-6 sm:p-7 animate-fade-in">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-11 h-11 rounded-2xl bg-champagne-gold text-stone-950 flex items-center justify-center text-xl shadow-sm">🍐</div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800">Sobremesas</span>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Harmonizações Doces</h3>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-stone-800">
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-champagne-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Frutas Brancas:</strong> Torta leve de pera, maçã assada com canela suave ou salada de frutas frescas.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-champagne-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Confeitaria com Amêndoas:</strong> Bolo de amêndoas pouco doce, financier ou folhados leves.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-champagne-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Cremes Suaves:</strong> Crème brûlée delicado ou sorbet cítrico de limão/pêssego.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-golddeep-800 block mb-1">🗓️ Ocasião</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Brindes especiais, recepção de convidados ou aperitivo antes do jantar.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-golddeep-800 block mb-1">🥂 Companhia</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Amigos, família em datas especiais ou jantar elegante a dois.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-golddeep-800 block mb-1">☀️ Horário</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Brunch, fim de tarde ou início das comemorações à noite.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-golddeep-800 block mb-1">❄️ Temperatura</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Bem gelado: 6°C a 9°C (~1h30 na geladeira antes de abrir).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="relative rounded-3xl overflow-hidden bg-stone-900 text-white shadow-md">
+                <img
+                    src="./Imagens/regiao-la-mancha-espanha.jpg"
+                    alt="Vinhedos ensolarados na região de Castilla-La Mancha, Espanha"
+                    class="absolute inset-0 w-full h-full object-cover object-center opacity-35"
+                    onerror="this.style.display='none'"
+                >
+                <div class="absolute inset-0 bg-gradient-to-r from-stone-950/95 via-stone-900/85 to-golddeep-900/75"></div>
+
+                <div class="relative z-10 p-6 sm:p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-champagne-amber text-xs font-bold uppercase tracking-wider">
+                            <span>🏰</span> Curiosidade & Terroir
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                            Herança familiar espanhola desde 1853
+                        </h2>
+                        <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+                            A trajetória da família <strong>Lozano</strong> começou em 1853 nos primeiros vinhedos de Villarrobledo, no coração de <strong>Castilla-La Mancha</strong> (Espanha). Unindo tradição centenária e tecnologia moderna, a vinícola criou a linha <strong>Tanggier</strong> para oferecer espumantes vibrantes e acessíveis.
+                        </p>
+                        <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+                            Fermentado em tanques de aço inoxidável em temperaturas baixas (entre 14°C e 16°C), sem passagem por madeira, o <strong>Tanggier Brut</strong> guarda o perfume puro das uvas brancas espanholas e sua refrescante acidez natural.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 space-y-4">
+                        <h3 class="font-serif text-xl font-bold text-white border-b border-white/15 pb-3">Ficha Rápida do Rótulo</h3>
+                        <dl class="space-y-3 text-sm">
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Uvas:</dt>
+                                <dd class="font-semibold text-white text-right">Blend de uvas brancas espanholas (Airén e complementos)</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Origem:</dt>
+                                <dd class="font-semibold text-white text-right">Castilla-La Mancha, Espanha</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Produtor:</dt>
+                                <dd class="font-semibold text-white text-right">Bodegas Lozano (desde 1853)</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Vinificação:</dt>
+                                <dd class="font-semibold text-white text-right">Tanques de Aço Inox (sem carvalho)</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Teor Alcoólico:</dt>
+                                <dd class="font-semibold text-champagne-amber text-right">10% a 12% vol. • Brut</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cream-200 border-t border-cream-300 mt-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-serif text-lg font-bold text-stone-900">ENNOVIN • Unidade parceira VINHO24H</p>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">
+                    Curadoria descomplicada com preço único em todos os rótulos. Escolha, sirva-se e aproveite!
+                </p>
+            </div>
+            <div class="text-xs text-stone-500">Beba com moderação. Venda proibida para menores de 18 anos.</div>
+        </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-stone-900 text-white px-4 py-3 rounded-xl shadow-lg flex items-center gap-2.5 text-sm font-medium">
+        <i class="ph-fill ph-check-circle text-champagne-amber text-lg"></i>
+        <span>Link da página copiado!</span>
+    </div>
+
+    <script>
+        function filterPairing(type) {
+            const cardSalgado = document.getElementById('card-salgado');
+            const cardDoce = document.getElementById('card-doce');
+            const tabAll = document.getElementById('tab-all');
+            const tabSalgado = document.getElementById('tab-salgado');
+            const tabDoce = document.getElementById('tab-doce');
+
+            [tabAll, tabSalgado, tabDoce].forEach(btn => {
+                btn.classList.remove('bg-golddeep-800', 'text-white', 'shadow-sm');
+                btn.classList.add('text-stone-700');
+            });
+
+            if (type === 'all') {
+                tabAll.classList.add('bg-golddeep-800', 'text-white', 'shadow-sm');
+                tabAll.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'block';
+                cardDoce.style.display = 'block';
+            } else if (type === 'salgado') {
+                tabSalgado.classList.add('bg-golddeep-800', 'text-white', 'shadow-sm');
+                tabSalgado.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'block';
+                cardDoce.style.display = 'none';
+            } else if (type === 'doce') {
+                tabDoce.classList.add('bg-golddeep-800', 'text-white', 'shadow-sm');
+                tabDoce.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'none';
+                cardDoce.style.display = 'block';
+            }
+        }
+
+        function copyPageLink() {
+            const dummyInput = document.createElement('input');
+            dummyInput.value = window.location.href;
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummyInput);
+
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3000);
+        }
+    </script>
+</body>
+</html>

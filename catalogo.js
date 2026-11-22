@@ -317,6 +317,855 @@ const CATALOGO_VINHOS = [
             orcamento: "Preço único da Adega VINHO24H (grande destaque de valor dentro do preço único).",
             intencao: "Oferecer um DOC português seco de alto nível gastronômico no catálogo."
         }
+    },
+
+    // =========================================================================
+    // VINHOS ROSÉS
+    // =========================================================================
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "roses",
+        nome: "Pueblo del Sol Tannat Rosé 2025",
+        arquivoPagina: "pueblo-del-sol-tannat-rose.html",
+        arquivoImagem: "PUEBLO DEL SOL TANNAT ROSE.png",
+        imagemRegiao: "Roses/Imagens/regiao-canelones-uruguai.jpg",
+        paisRegiao: "Canelones, Uruguai",
+        bandeira: "🇺🇾",
+        seloDestaque: "☀️ 100% Tannat Rosé",
+        destaqueOuro: false,
+        resumoCard: "Rosé seco uruguaio leve e refrescante, com notas de morango e cereja frescos e toque cremoso sem passagem por madeira.",
+        tags: ["Rosé Seco", "Leve", "Frutas Vermelhas"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 35 },
+            maciez: { rotulo: "Macio e Cremoso", nivel: 82 },
+            docura: { rotulo: "Seco Frutado", nivel: 15 },
+            frescor: { rotulo: "Bem Refrescante", nivel: 78 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Canelones (Juanicó), Uruguai",
+            terroir: "Solos argilo-calcários e siltosos com excelente drenagem e clima temperado refrescado pelas brisas do Oceano Atlântico e do Rio da Prata.",
+            uvas: "100% Tannat (colheita manual, vinificada como rosé)",
+            produtor: "Linha Pueblo del Sol (tradição Canelones / Juanicó)",
+            safra: "2025",
+            metodo: "Vinificação em aço inox sem passagem por carvalho, preservando frescor e fruta.",
+            sensoriais: "Cor rosada clara/casca de cebola; aromas de morango, cereja e flores sutis; boca leve, macia, levemente cremosa e de acidez refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Projeto uruguaio na tradicional região de Canelones focado em vinhos jovens, expressivos e fáceis de beber.",
+            analiseTecnica: "Teor alcoólico: ~12% a 12,5% vol. | Estilo: Rosé Seco | Consumo jovem (até 3 anos).",
+            avaliacoes: "Muito bem aceito pelo contraste surpreendente entre a fama potente da Tannat e a leveza deste rosé.",
+            precoMedioMercado: "R$ 35 a R$ 60 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Homenagem ao sol uruguaio que amadurece os vinhedos costeiros, ilustrando a paisagem costeira no próprio rótulo."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem busca um rosé seco elegante, leve e com frescor limpo.",
+            historicoPublico: "Agrada quem quer algo leve para dias quentes sem doçura residual.",
+            rejeicoesQueEvita: "Zero peso e zero adstringência (apesar de ser feito com Tannat).",
+            preferenciasAtendidas: "Frutas vermelhas frescas, leveza e acidez refrescante."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Frutos do mar (camarão, mariscos) e peixes grelhados",
+                "Culinária japonesa (sushi e sashimi) e frango ao molho cítrico",
+                "Queijos cremosos (brie, burrata) e aperitivos leves"
+            ],
+            harmonizacaoDoce: [
+                "Morangos frescos ou torta leve de frutas vermelhas",
+                "Torta leve de limão ou panna cotta de baunilha",
+                "Chocolate branco suave com raspas cítricas"
+            ],
+            ocasiao: "Fim de tarde na varanda, happy hour ou almoço leve.",
+            companhia: "Casal, amigos no pôr do sol ou apreciação individual.",
+            temperatura: "8 °C a 10 °C (45 a 60 minutos na geladeira antes de abrir).",
+            horario: "Almoço ensolarado, fim de tarde ou início de noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um rosé seco sul-americano moderno e refrescante."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "roses",
+        nome: "Peccato Di Vino Classic Rosé",
+        arquivoPagina: "peccato-di-vino-classic-rose.html",
+        arquivoImagem: "VINHO FINO ROSE SECO PECCATO DIVINO CLASSIC.png",
+        imagemRegiao: "Roses/Imagens/regiao-vale-central-chile-rose.jpg",
+        paisRegiao: "Vale Central, Chile",
+        bandeira: "🇨🇱",
+        seloDestaque: "✨ Clássico Chileno",
+        destaqueOuro: false,
+        resumoCard: "Rosé fino seco chileno jovem e delicado, com aromas de morango, framboesa e final limpo para acompanhar pratos leves.",
+        tags: ["Rosé Seco", "Delicado", "Versátil"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 32 },
+            maciez: { rotulo: "Suave e Limpo", nivel: 80 },
+            docura: { rotulo: "Seco", nivel: 15 },
+            frescor: { rotulo: "Equilibrado", nivel: 72 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "D.O. Central Valley (Vale do Maule), Chile",
+            terroir: "Coração do Vale Central chileno, com dias ensolarados e brisas frescas que preservam a acidez e a fruta limpa.",
+            uvas: "Cabernet Sauvignon e Carménère",
+            produtor: "Viña de Aguirre",
+            safra: "Não Safrado / Corrente",
+            metodo: "Vinificação moderna em rosé focada em frescor e aromas primários de frutas vermelhas.",
+            sensoriais: "Rosa claro brilhante; aromas de morango, framboesa e toque floral sutil; em boca é leve, seco, refrescante e de final limpo."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Viña de Aguirre — vinícola familiar localizada no Vale do Maule (Chile), reconhecida pela ótima relação qualidade-preço.",
+            analiseTecnica: "Teor alcoólico: 12% a 13% vol. | Estilo: Vinho Fino Rosé Seco | 750ml.",
+            avaliacoes: "Rótulo de entrada muito elogiado pela leveza e praticidade para o dia a dia.",
+            precoMedioMercado: "R$ 25 a R$ 45 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "A linha 'Peccato Di Vino' foi inspirada em 'A Divina Comédia' de Dante Alighieri, brincando com o prazer de degustar um bom vinho sem culpa."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem quer um rosé seco leve, sem sabor adocicado e fácil de combinar.",
+            historicoPublico: "Boa aceitação como vinho descomplicado para happy hour e refeições leves.",
+            rejeicoesQueEvita: "Sem amargor, sem dulçor excessivo e sem peso.",
+            preferenciasAtendidas: "Delicadeza aromática, frescor e praticidade."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Saladas frescas e pratos mediterrâneos leves",
+                "Frutos do mar, peixes grelhados e comida japonesa (sushi/sashimi)",
+                "Queijo de cabra, queijos frescos e aperitivos"
+            ],
+            harmonizacaoDoce: [
+                "Morangos e framboesas frescas ou pavlova leve",
+                "Panna cotta com calda leve de frutas vermelhas",
+                "Bombons de chocolate branco"
+            ],
+            ocasiao: "Happy hour em casa, jantar leve ou aperitivo de fim de tarde.",
+            companhia: "Amigos, casal ou momento relaxante pós-trabalho.",
+            temperatura: "8 °C a 10 °C (45 a 60 minutos na geladeira antes de abrir).",
+            horario: "Fim de tarde ou jantar leve.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um rosé chileno seco versátil e direto ao ponto."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "roses",
+        nome: "Bons Ventos Fresh Rosé",
+        arquivoPagina: "bons-ventos-fresh-rose.html",
+        arquivoImagem: "BONS VENTOS FRESH ROSE.png",
+        imagemRegiao: "Roses/Imagens/regiao-lisboa-bons-ventos.jpg",
+        paisRegiao: "Lisboa, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🌬️ Levíssimo 9,5%",
+        destaqueOuro: true,
+        resumoCard: "Rosé português meio seco de baixo teor alcoólico (9,5%), super refrescante, macio e cheio de morango, framboesa e cereja.",
+        tags: ["Meio Seco", "9,5% Álcool", "Super Refrescante"],
+        perfilSensorial: {
+            corpo: { rotulo: "Bem Leve", nivel: 25 },
+            maciez: { rotulo: "Super Macio", nivel: 88 },
+            docura: { rotulo: "Meio Seco Suave", nivel: 45 },
+            frescor: { rotulo: "Muito Refrescante", nivel: 82 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vinho Regional Lisboa (Alenquer), Portugal",
+            terroir: "Vinhedos de encosta em Alenquer (a ~45 km de Lisboa) com forte brisa atlântica que preserva aromas e acidez.",
+            uvas: "Castelão, Camarate e Cabernet Sauvignon",
+            produtor: "Casa Santos Lima (Quinta de Bons Ventos)",
+            safra: "Não Safrado / Corrente",
+            metodo: "Fermentação em tanques de aço inox com controle rigoroso de temperatura, sem passagem por carvalho.",
+            sensoriais: "Rosa-claro cristalino; aromas intensos de morango, framboesa e cereja com toque cítrico e floral; boca bem leve, refrescante e com leve doçura equilibrada."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Casa Santos Lima — produtor familiar histórico de Alenquer (Portugal), referência internacional em vinhos de alto valor agregado.",
+            analiseTecnica: "Teor alcoólico: 9,5% vol. | Estilo: Rosé Meio Seco (Demi-Sec) | 750ml.",
+            avaliacoes: "Linha Quinta de Bons Ventos reconhecida internacionalmente como destaque em qualidade/preço ('Best Buy').",
+            precoMedioMercado: "R$ 40 a R$ 60 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "A versão 'Fresh' foi criada especialmente para climas quentes e para quem deseja menos álcool (9,5%) com máxima refrescância."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Ideal para quem prefere vinhos leves no álcool, suaves/meio secos e super fáceis de beber gelados.",
+            historicoPublico: "Sucesso entre iniciantes e em tardes quentes de verão.",
+            rejeicoesQueEvita: "Zero aspereza, sem sensação alcoólica forte e nada seco demais.",
+            preferenciasAtendidas: "Fruta vermelha docinha na medida, leveza extrema e frescor."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Frutos do mar leves, sushi, sashimi e pokes frescos",
+                "Saladas de verão, wraps e frango grelhado",
+                "Queijos brancos e frescos (brie, ricota temperada, mussarela de búfala)"
+            ],
+            harmonizacaoDoce: [
+                "Torta de morango ou cheesecake de frutas vermelhas",
+                "Mousse leve de morango ou maracujá e salada de frutas",
+                "Macarons de frutas vermelhas ou bombons de chocolate branco"
+            ],
+            ocasiao: "Tarde de sol, pós-piscina, happy hour ou taça leve sem compromisso.",
+            companhia: "Amigos, casal ou quem prefere bebidas suaves.",
+            temperatura: "6 °C a 8 °C (cerca de 1 hora na geladeira antes de abrir).",
+            horario: "Meio da tarde, pôr do sol ou início de noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Entregar o rosé mais leve, acessível e refrescante da carta."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "roses",
+        nome: "Calamares Vinho Verde DOC Rosé",
+        arquivoPagina: "calamares-vinho-verde-rose.html",
+        arquivoImagem: "CALAMARES VINHO VERDE ROSE.png",
+        imagemRegiao: "Roses/Imagens/regiao-vinho-verde-minho.jpg",
+        paisRegiao: "Vinho Verde, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🐙 Leve Frisante DOC",
+        destaqueOuro: false,
+        resumoCard: "Vinho Verde rosé meio seco (10,5% vol.) com leve frisância natural, aromas de morango, cereja e groselha para beber bem gelado.",
+        tags: ["Vinho Verde", "Meio Seco", "Leve Frisante"],
+        perfilSensorial: {
+            corpo: { rotulo: "Bem Leve", nivel: 28 },
+            maciez: { rotulo: "Macio e Alegre", nivel: 85 },
+            docura: { rotulo: "Meio Seco Equilibrado", nivel: 42 },
+            frescor: { rotulo: "Muito Vibrante", nivel: 86 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "DOC Vinho Verde (Minho), Portugal",
+            terroir: "Noroeste de Portugal com clima atlântico ameno e solos graníticos e arenosos que garantem acidez natural vibrante e frescor mineral.",
+            uvas: "Espadeiro, Borraçal e Padeiro",
+            produtor: "Enoport Wines",
+            safra: "Não Safrado",
+            metodo: "Fermentação em cubas de aço inox sob controle de temperatura, mantendo leve gás carbônico residual (aspecto levemente frisante).",
+            sensoriais: "Rosa claro salmão brilhante; aromas intensos de morango, cereja madura, groselha e florais; boca leve, vibrante e meio seca equilibrada."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Enoport Wines — grupo português formado em 2005 pela união de casas vinícolas centenárias como Caves Velhas e Caves Dom Teodósio.",
+            analiseTecnica: "Teor alcoólico: 10,5% vol. | Estilo: Meio Seco (Leve Frisante) | DOC Vinho Verde | 750ml.",
+            avaliacoes: "Um dos Vinhos Verdes portugueses mais populares e tradicionais no Brasil.",
+            precoMedioMercado: "R$ 40 a R$ 65 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Famoso pela garrafa arredondada e pelo polvo rosa no rótulo, celebrando a vocação costeira e gastronômica do Minho."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem ama vinhos bem gelados, jovens, com cócegas sutis de gás natural e toque meio seco refrescante.",
+            historicoPublico: "Altíssima familiaridade e apelo visual no mercado brasileiro.",
+            rejeicoesQueEvita: "Nunca é pesado, não tem madeira nem álcool elevado.",
+            preferenciasAtendidas: "Frescor intenso, leve frisância e equilíbrio entre acidez e doçura."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Frutos do mar (lula, camarão), bolinho de bacalhau e peixes grelhados",
+                "Sushi, sashimi de salmão, ceviche suave e saladas frescas",
+                "Queijos leves (minas frescal, brie, cabra) e canapés"
+            ],
+            harmonizacaoDoce: [
+                "Torta de morango ou cheesecake de frutas vermelhas",
+                "Panna cotta com calda de morango ou sorbet de frutas",
+                "Doce de ovos suave ou bolo de iogurte com frutas"
+            ],
+            ocasiao: "Fim de semana na varanda, almoço leve ou encontro descontraído com amigos.",
+            companhia: "Amigos, família ou casal.",
+            temperatura: "6 °C a 8 °C (1 hora na geladeira antes de abrir).",
+            horario: "Almoço de fim de semana, tarde quente ou aperitivo.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Trazer um ícone português de Vinho Verde Rosé acessível e vibrante."
+        }
+    },
+
+    // =========================================================================
+    // ESPUMANTES
+    // =========================================================================
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "espumantes",
+        nome: "Espumante Almadén Brut Rosé",
+        arquivoPagina: "almaden-brut-rose.html",
+        arquivoImagem: "ESPUMANTE ALMADEN ROSE BRUT.png",
+        imagemRegiao: "Espumantes/Imagens/regiao-vale-sao-francisco.jpg",
+        paisRegiao: "Vale do São Francisco, Brasil",
+        bandeira: "🇧🇷",
+        seloDestaque: "🥂 Brut Rosé Brasil",
+        destaqueOuro: false,
+        resumoCard: "Espumante rosé brasileiro seco (Brut), 100% Shiraz, com borbulhas finas e aromas frescos de morango, amora e framboesa.",
+        tags: ["Brut (Seco)", "100% Shiraz", "Método Charmat"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 30 },
+            maciez: { rotulo: "Fina e Agradável", nivel: 78 },
+            docura: { rotulo: "Brut (Seco)", nivel: 22 },
+            frescor: { rotulo: "Vibrante e Refrescante", nivel: 82 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vale do São Francisco (BA), Brasil (raiz histórica Almadén desde 1973)",
+            terroir: "Vinhedos próprios tropicais do Grupo Miolo com intensa insolação e irrigação controlada pelo Rio São Francisco.",
+            uvas: "100% Shiraz (Syrah)",
+            produtor: "Miolo Wine Group (Almadén)",
+            safra: "Não Safrado",
+            metodo: "Método Charmat em tanques de aço inox após breve maceração com as cascas para cor rosada delicada.",
+            sensoriais: "Rosa de média intensidade com perlage fino; aromas limpos de morango, amora, framboesa e frutas silvestres; boca leve, equilibrada e refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Miolo Wine Group — referência da vitivinicultura nacional; adquiriu a histórica marca Almadén (fundada no RS em 1973) em 2003.",
+            analiseTecnica: "Teor alcoólico: 11,5% vol. | Estilo: Espumante Natural Brut Rosé | 750ml.",
+            avaliacoes: "Um dos espumantes nacionais de melhor relação custo-benefício para brindes e dia a dia.",
+            precoMedioMercado: "R$ 25 a R$ 45 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Une a tradição pioneira da marca Almadén no Brasil à tecnologia tropical do Grupo Miolo."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem busca um espumante rosé seco leve, frutado e fácil de beber.",
+            historicoPublico: "Alta aceitação em festas, jantares leves e brindes cotidianos.",
+            rejeicoesQueEvita: "Não é doce nem enjoativo, e não tem amargor.",
+            preferenciasAtendidas: "Frutas vermelhas frescas, leveza e borbulhas delicadas."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Salmão grelhado, frutos do mar, sushi e sashimi",
+                "Saladas frescas, massas com molhos delicados e pizzas leves",
+                "Canapés, queijo brie e tábua de frios suaves"
+            ],
+            harmonizacaoDoce: [
+                "Morangos, framboesas e cerejas frescas",
+                "Cheesecake leve de frutas vermelhas ou torta pouco doce",
+                "Macarons de frutas vermelhas ou suspiros com frutas"
+            ],
+            ocasiao: "Brindes, comemorações em casa, happy hour ou sushi à noite.",
+            companhia: "Casal, amigos ou recepção descontraída.",
+            temperatura: "6 °C a 8 °C (1h30 na geladeira antes de abrir).",
+            horario: "Brunch, fim de tarde ou abertura de jantar.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um espumante Brut Rosé brasileiro versátil e refrescante."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "espumantes",
+        nome: "Espumante Tanggier Brut",
+        arquivoPagina: "tanggier-brut.html",
+        arquivoImagem: "ESPUMANTE LOZANO TANGGIER BRUT.png",
+        imagemRegiao: "Espumantes/Imagens/regiao-la-mancha-espanha.jpg",
+        paisRegiao: "Castilla-La Mancha, Espanha",
+        bandeira: "🇪🇸",
+        seloDestaque: "🥂 Cuvée Espanhol",
+        destaqueOuro: false,
+        resumoCard: "Espumante branco seco espanhol de borbulhas finas, com aromas refrescantes de pera, pêssego e leve toque mineral.",
+        tags: ["Branco Brut", "Espanhol", "Frutas Brancas"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve a Médio", nivel: 38 },
+            maciez: { rotulo: "Delicada", nivel: 72 },
+            docura: { rotulo: "Brut (Seco)", nivel: 20 },
+            frescor: { rotulo: "Vivo e Refrescante", nivel: 78 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Castilla-La Mancha / Multirregional, Espanha",
+            terroir: "Vinhedos ensolarados de clima mediterrâneo-continental em Villarrobledo (La Mancha), preservando aromas limpos de fruta branca.",
+            uvas: "Blend de uvas brancas espanholas (como Airén e complementos)",
+            produtor: "Bodegas Lozano",
+            safra: "Não Safrado",
+            metodo: "Vinificação em tanques de aço inox em baixas temperaturas (14 °C a 16 °C), sem passagem por carvalho.",
+            sensoriais: "Amarelo-palha com reflexos esverdeados e borbulhas finas; aromas de pera, pêssego e nuances minerais; boca leve a média com acidez viva e final frutado."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Bodegas Lozano — tradição vinícola familiar iniciada em 1853 em Villarrobledo, Espanha.",
+            analiseTecnica: "Teor alcoólico: 10% a 12% vol. | Estilo: Espumante Branco Brut (Special Cuvée) | 750ml.",
+            avaliacoes: "Muito apreciado como espumante europeu seco de excelente custo-benefício.",
+            precoMedioMercado: "R$ 45 a R$ 75 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Linha dinâmica internacional da centenária família Lozano, unindo tradição espanhola e estilo leve."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem aprecia espumante branco seco clássico, leve e gastronômico.",
+            historicoPublico: "Popular entre apreciadores de Brut tradicional sem dulçor.",
+            rejeicoesQueEvita: "Zero dulçor excessivo e sem peso de madeira.",
+            preferenciasAtendidas: "Frescor mineral, frutas brancas limpas e boa vivacidade."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Mariscos, atum, salmão, sushi e culinária asiática",
+                "Saladas frescas, carpaccio, peixes brancos e carnes brancas",
+                "Castanhas, queijo brie/camembert e bruschettas"
+            ],
+            harmonizacaoDoce: [
+                "Torta leve de pera ou maçã assada pouco doce",
+                "Bolo de amêndoas ou folhados leves",
+                "Crème brûlée suave ou sorbet de limão/pêssego"
+            ],
+            ocasiao: "Brindes especiais, recepção de convidados ou aperitivo antes do jantar.",
+            companhia: "Amigos, família ou jantar elegante a dois.",
+            temperatura: "6 °C a 9 °C (1h30 na geladeira antes de abrir).",
+            horario: "Brunch, fim de tarde ou início da noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um espumante branco Brut europeu clássico."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "espumantes",
+        nome: "Espumante Terranova Moscatel Branco Doce",
+        arquivoPagina: "terranova-moscatel-branco.html",
+        arquivoImagem: "ESPUMANTE MOSCATEL TERRANOVA BRANCO DOCE.png",
+        imagemRegiao: "Espumantes/Imagens/regiao-vale-sao-francisco.jpg",
+        paisRegiao: "Vale do São Francisco, Brasil",
+        bandeira: "🇧🇷",
+        seloDestaque: "🏅 Moscatel 7,5%",
+        destaqueOuro: true,
+        resumoCard: "Espumante branco doce (7,5% vol.), 100% Moscato, com aromas de jasmim, lichia e toque cítrico. Cremoso e nada enjoativo.",
+        tags: ["Moscatel Doce", "7,5% Álcool", "Sobremesas"],
+        perfilSensorial: {
+            corpo: { rotulo: "Bem Leve", nivel: 28 },
+            maciez: { rotulo: "Cremosa e Intensa", nivel: 86 },
+            docura: { rotulo: "Doce Equilibrado", nivel: 82 },
+            frescor: { rotulo: "Refrescante", nivel: 68 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Casa Nova, Vale do São Francisco (BA), Brasil",
+            terroir: "Clima tropical semiárido banhado pelo sol durante todo o ano e irrigado pelo Rio São Francisco, permitindo maturação aromática única da Moscato.",
+            uvas: "100% Moscato",
+            produtor: "Miolo Wine Group (Vinícola Terranova)",
+            safra: "Não Safrado",
+            metodo: "Método Asti (fermentação única em autoclave interrompida pelo frio para manter açúcar natural e apenas 7,5% de álcool).",
+            sensoriais: "Amarelo-esverdeado com reflexos dourados e perlage intenso; aromas de jasmim, flores brancas, lichia, mel e toque cítrico; boca leve, cremosa, doce e equilibrada."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Vinícola Terranova (Miolo Wine Group) — projeto pioneiro em Casa Nova (BA) que consolidou a viticultura tropical no Brasil.",
+            analiseTecnica: "Teor alcoólico: 7,5% vol. | Estilo: Espumante Branco Doce (Moscatel) | 750ml.",
+            avaliacoes: "Carro-chefe da marca e um dos espumantes doces mais premiados e populares do Brasil (medalhas como Concours Mondial de Bruxelles).",
+            precoMedioMercado: "R$ 38 a R$ 55 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Símbolo da inovação brasileira no Vale do São Francisco, colhendo até duas safras e meia por ano."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Ideal para quem ama espumantes doces, aromáticos e com baixíssimo teor alcoólico (7,5%).",
+            historicoPublico: "Sucesso absoluto entre iniciantes, festas e amantes de Moscatel.",
+            rejeicoesQueEvita: "Zero amargor e sem acidez agressiva.",
+            preferenciasAtendidas: "Doçura natural da uva, perfume floral/frutado e leveza extrema."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Queijos azuis suaves (gorgonzola doce) ou brie com geleia cítrica",
+                "Canapés agridoces (presunto de parma com melão)",
+                "Petiscos leves com frutas secas e castanhas"
+            ],
+            harmonizacaoDoce: [
+                "Torta de limão, mousse de maracujá e bolos cítricos",
+                "Morangos, pêssegos, abacaxi e sorvetes de frutas",
+                "Fondue de chocolate branco, pavlova e panetone"
+            ],
+            ocasiao: "Brinde de aniversário, sobremesa em família ou tarde na piscina.",
+            companhia: "Amigos, família ou quem prefere bebidas doces.",
+            temperatura: "4 °C a 6 °C (1h30 a 2h na geladeira antes de abrir).",
+            horario: "Tarde de sol, café da tarde festivo ou hora da sobremesa.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Entregar o Moscatel doce mais querido e premiado para brindes e sobremesas."
+        }
+    },
+
+    // =========================================================================
+    // VINHOS BRANCOS
+    // =========================================================================
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "brancos",
+        nome: "Lisbonita Branco",
+        arquivoPagina: "lisbonita-branco.html",
+        arquivoImagem: "LISBONITA BRANCO.png",
+        imagemRegiao: "Brancos/Imagens/regiao-lisboa-cidade.jpg",
+        paisRegiao: "Lisboa, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🚋 Levíssimo 9,5%",
+        destaqueOuro: false,
+        resumoCard: "Branco português meio seco (9,5% vol.), super leve e cítrico, com notas de limão, maçã verde, pêssego e toque floral.",
+        tags: ["Meio Seco", "9,5% Álcool", "Cítrico"],
+        perfilSensorial: {
+            corpo: { rotulo: "Bem Leve", nivel: 26 },
+            maciez: { rotulo: "Suave e Fluido", nivel: 85 },
+            docura: { rotulo: "Toque Suave", nivel: 38 },
+            frescor: { rotulo: "Refrescante", nivel: 78 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vinho Regional Lisboa, Portugal",
+            terroir: "Influência atlântica da região de Lisboa garantindo uvas de acidez fresca e aromas limpos.",
+            uvas: "Fernão Pires, Arinto, Vital e Moscatel",
+            produtor: "Casa Santos Lima",
+            safra: "Não Safrado / Corrente",
+            metodo: "Vinificação em tanques de aço inox sob controle de temperatura, sem passagem por carvalho.",
+            sensoriais: "Amarelo-palha com reflexos esverdeados; aromas de limão, maçã verde, pêssego e toque floral; boca leve, refrescante e meio seca equilibrada."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Casa Santos Lima — maior produtora de Vinho Regional Lisboa, com raízes no final do século XIX.",
+            analiseTecnica: "Teor alcoólico: 9,5% vol. | Estilo: Branco Meio Seco | 750ml.",
+            avaliacoes: "Muito apreciado pelo frescor leve e pelo visual ilustrado de Lisboa.",
+            precoMedioMercado: "R$ 45 a R$ 65 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "O nome vem da junção de 'Lisboa' e 'Bonita', homenageando os bairros coloridos e o clássico elétrico amarelo da capital portuguesa."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem busca um branco bem leve no álcool (9,5%), fácil de beber e com leve toque adocicado equilibrado.",
+            historicoPublico: "Sucesso entre iniciantes e em dias quentes.",
+            rejeicoesQueEvita: "Zero madeira pesada, não é ácido demais nem alcoólico.",
+            preferenciasAtendidas: "Cítrico delicado, floral sutil e frescor imediato."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Camarões, lulas grelhadas e peixe branco ao limão",
+                "Sushi, sashimi, ceviche suave e saladas frescas",
+                "Queijo fresco, ricota temperada e queijo brie"
+            ],
+            harmonizacaoDoce: [
+                "Torta de limão leve e mousse de maracujá",
+                "Salada de frutas frescas e torta de pêssego",
+                "Bolo de laranja caseiro ou pastel de nata leve"
+            ],
+            ocasiao: "Tarde de sol, pós-piscina, sushi em casa ou almoço leve.",
+            companhia: "Amigos, casal ou quem prefere vinhos leves e refrescantes.",
+            temperatura: "6 °C a 8 °C (1 hora na geladeira antes de abrir).",
+            horario: "Almoço de fim de semana, meio da tarde ou happy hour.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um branco português leve e charmoso para dias quentes."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "brancos",
+        nome: "Peccato Di Vino Chardonnay",
+        arquivoPagina: "peccato-di-vino-chardonnay.html",
+        arquivoImagem: "BRANCO SECO PECCATO CHARDONNAY.png",
+        imagemRegiao: "Brancos/Imagens/regiao-vale-central-chile.jpg",
+        paisRegiao: "Vale Central, Chile",
+        bandeira: "🇨🇱",
+        seloDestaque: "🍍 Sem Carvalho",
+        destaqueOuro: false,
+        resumoCard: "Chardonnay chileno seco sem passagem por madeira, com aromas limpos de abacaxi, pêssego maduro e frescor cítrico.",
+        tags: ["Branco Seco", "100% Chardonnay", "Tropical"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve a Médio", nivel: 48 },
+            maciez: { rotulo: "Equilibrado", nivel: 75 },
+            docura: { rotulo: "Seco Frutado", nivel: 15 },
+            frescor: { rotulo: "Vivo", nivel: 75 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "D.O. Central Valley (Vale do Maule), Chile",
+            terroir: "Vale do Maule com dias ensolarados que amadurecem a fruta tropical e noites frescas preservando a acidez.",
+            uvas: "100% Chardonnay",
+            produtor: "Viña de Aguirre",
+            safra: "Não Safrado / Corrente",
+            metodo: "Fermentado e mantido em cubas de aço inox (sem passagem por barricas de carvalho).",
+            sensoriais: "Amarelo-limão límpido; aromas de abacaxi, pêssego maduro, notas cítricas e florais; boca leve a média com acidez viva e final frutado."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Viña de Aguirre — vinícola familiar fundada em 1955 no Vale do Maule por Pedro Etcheberry.",
+            analiseTecnica: "Teor alcoólico: 12,5% vol. | Estilo: Branco Seco (sem madeira) | 750ml.",
+            avaliacoes: "Chardonnay de entrada elogiado pela leveza e foco na fruta pura.",
+            precoMedioMercado: "R$ 35 a R$ 65 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Série inspirada em 'A Divina Comédia' de Dante Alighieri."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem quer um Chardonnay seco moderno e refrescante, sem o peso amanteigado da madeira.",
+            historicoPublico: "Boa aceitação em almoços e jantares cotidianos.",
+            rejeicoesQueEvita: "Sem gosto de madeira pesada e sem dulçor residual.",
+            preferenciasAtendidas: "Fruta tropical limpa, equilíbrio e acidez agradável."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Peixes grelhados, salmão, camarão e mariscos",
+                "Frango grelhado com ervas, risoto de limão ou massa ao molho branco suave",
+                "Saladas verdes com queijo minas, búfala ou brie"
+            ],
+            harmonizacaoDoce: [
+                "Abacaxi assado com raspas de limão ou salada de frutas",
+                "Torta leve de pêssego, pera ou maçã pouco doce",
+                "Crème brûlée suave ou chocolate branco com coco"
+            ],
+            ocasiao: "Jantar leve durante a semana, almoço de domingo ou aperitivo.",
+            companhia: "Casal, amigos ou apreciadores de brancos secos.",
+            temperatura: "8 °C a 10 °C (45 minutos na geladeira antes de abrir).",
+            horario: "Almoço, fim de tarde ou jantar leve.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um Chardonnay chileno seco leve e descomplicado."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "brancos",
+        nome: "Bons Ventos Branco 2024",
+        arquivoPagina: "bons-ventos-branco-2024.html",
+        arquivoImagem: "BONS VENTOS BRANCO 2024.png",
+        imagemRegiao: "Brancos/Imagens/regiao-lisboa-bons-ventos.jpg",
+        paisRegiao: "Lisboa, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🏅 Linha Best Buy",
+        destaqueOuro: true,
+        resumoCard: "Branco português seco premiado, muito aromático (limão, abacaxi, maçã verde e jasmim), leve e com textura sutilmente cremosa.",
+        tags: ["Branco Seco", "Aromático", "Best Buy"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve a Médio", nivel: 42 },
+            maciez: { rotulo: "Sutilmente Cremoso", nivel: 78 },
+            docura: { rotulo: "Seco Frutado", nivel: 15 },
+            frescor: { rotulo: "Cítrico Equilibrado", nivel: 80 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vinho Regional Lisboa, Portugal",
+            terroir: "Clima atlântico de Alenquer (Lisboa) com brisas marítimas que preservam a acidez natural e os aromas.",
+            uvas: "Arinto, Fernão Pires, Vital, Chardonnay e Viosinho",
+            produtor: "Casa Santos Lima",
+            safra: "2024",
+            metodo: "Fermentação em tanques de aço inox com controle de temperatura, sem passagem por madeira.",
+            sensoriais: "Amarelo-palha com reflexos verde-limão; aromas intensos de limão, abacaxi, melão, maçã verde, pera e jasmim; boca leve, equilibrada e sutilmente cremosa."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Casa Santos Lima — maior produtora da região de Lisboa, referência mundial em vinhos 'Best Buy'.",
+            analiseTecnica: "Teor alcoólico: 12,5% vol. | Estilo: Branco Seco | Tampa de rosca (Screw Cap) | 750ml.",
+            avaliacoes: "Rótulo constantemente reconhecido internacionalmente pelo excelente custo-benefício.",
+            precoMedioMercado: "R$ 45 a R$ 67 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Selo emblemático da Quinta de Bons Ventos celebrando a brisa atlântica de Lisboa."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem quer um branco seco aromático, gastronômico e muito fácil de beber.",
+            historicoPublico: "Um dos brancos portugueses mais populares do Brasil.",
+            rejeicoesQueEvita: "Sem madeira pesada, não é ácido agressivo e tem abertura prática (rosca).",
+            preferenciasAtendidas: "Aroma intenso tropical/floral, frescor equilibrado e final limpo."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Frutos do mar (camarões, mariscos), sushi, sashimi e culinária oriental",
+                "Peixes grelhados, aves com ervas e saladas frescas",
+                "Queijo de cabra, queijos frescos e massas ao pesto ou limão"
+            ],
+            harmonizacaoDoce: [
+                "Pera, maçã verde, abacaxi grelhado ou salada de frutas",
+                "Torta de limão pouco doce ou crumble de maçã",
+                "Biscoitos amanteigados cítricos ou brie com mel suave"
+            ],
+            ocasiao: "Noite de comida japonesa, peixe grelhado ou almoço de fim de semana.",
+            companhia: "Casal, amigos na varanda ou almoço em família.",
+            temperatura: "6 °C a 8 °C (1 hora na geladeira antes de abrir).",
+            horario: "Almoço ensolarado, fim de tarde ou jantar leve.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Entregar um branco seco português premiado e super versátil."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "brancos",
+        nome: "Calamares Vinho Verde DOC Branco",
+        arquivoPagina: "calamares-vinho-verde-branco.html",
+        arquivoImagem: "CALAMARES VINHO VERDE BRANCO.png",
+        imagemRegiao: "Brancos/Imagens/regiao-vinho-verde-minho.jpg",
+        paisRegiao: "Vinho Verde, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🏅 Best Buy • 9%",
+        destaqueOuro: true,
+        resumoCard: "Vinho Verde tradicional meio seco (9% vol.), levemente frisante natural, com notas de limão, pêssego branco e lichia.",
+        tags: ["Vinho Verde", "9% Álcool", "Leve Frisante"],
+        perfilSensorial: {
+            corpo: { rotulo: "Bem Leve", nivel: 22 },
+            maciez: { rotulo: "Fluido e Fresco", nivel: 82 },
+            docura: { rotulo: "Meio Seco Discreto", nivel: 32 },
+            frescor: { rotulo: "Muito Vibrante", nivel: 88 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "DOC Vinho Verde (Minho), Portugal",
+            terroir: "Noroeste português sob influência atlântica e solos graníticos, imprimindo acidez vibrante e mineralidade.",
+            uvas: "Arinto, Trajadura e Loureiro",
+            produtor: "Enoport Wines",
+            safra: "Não Safrado",
+            metodo: "Fermentação em aço inox com controle de temperatura, mantendo leve gás carbônico natural (levemente frisante).",
+            sensoriais: "Amarelo-palha muito claro com reflexos esverdeados; aromas de limão, pêssego branco e lichia; boca bem leve, vibrante e meio seca equilibrada."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Enoport Wines — grupo formado em 2005 reunindo casas portuguesas centenárias.",
+            analiseTecnica: "Teor alcoólico: 9% vol. | Estilo: Meio Seco (Leve Frisante) | DOC Vinho Verde | 750ml.",
+            avaliacoes: "Premiado com selo 'Best Buy' da Wine Enthusiast (estampado no rótulo).",
+            precoMedioMercado: "R$ 45 a R$ 75 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Um dos Vinhos Verdes mais icônicos e reconhecíveis do Brasil pela garrafa arredondada e o polvo no rótulo."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Ideal para quem quer um Vinho Verde clássico leve no álcool (9%), cítrico e com micro-borbulhas refrescantes.",
+            historicoPublico: "Favorito absoluto em dias quentes e mesas de frutos do mar.",
+            rejeicoesQueEvita: "Zero madeira, baixo álcool e não é enjoativo.",
+            preferenciasAtendidas: "Frescor máximo, leve frisância e final fluido."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Peixes grelhados, bolinho de bacalhau, camarão e lula",
+                "Sushi, sashimi, ceviche suave e saladas frescas",
+                "Queijos brancos frescos (minas frescal, ricota) e petiscos"
+            ],
+            harmonizacaoDoce: [
+                "Torta de limão leve, mousse de maracujá ou sorbet cítrico",
+                "Salada de frutas com abacaxi, kiwi e uva verde",
+                "Torta leve de pera ou bolo simples de limão"
+            ],
+            ocasiao: "Almoço de fim de semana, pós-piscina ou noite de sushi/petiscos.",
+            companhia: "Amigos, família ou casal em dias quentes.",
+            temperatura: "6 °C a 8 °C (1 hora na geladeira antes de abrir).",
+            horario: "Almoço, meio da tarde ou happy hour.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Trazer o clássico Vinho Verde Branco Best Buy para a carta."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: true,
+        categoria: "brancos",
+        nome: "Calamares Vinho Verde DOC Sweet (Doce)",
+        arquivoPagina: "calamares-vinho-verde-doce.html",
+        arquivoImagem: "CALAMARES VINHO VERDE DOCE.png",
+        imagemRegiao: "Brancos/Imagens/regiao-vinho-verde-minho.jpg",
+        paisRegiao: "Vinho Verde, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🍯 Versão Sweet 9%",
+        destaqueOuro: false,
+        resumoCard: "Vinho Verde branco doce/suave (9% vol.), com aromas de abacaxi, manga e pêssego em calda equilibrados por acidez refrescante.",
+        tags: ["Doce / Suave", "9% Álcool", "Vinho Verde"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve e Cremoso", nivel: 34 },
+            maciez: { rotulo: "Super Suave", nivel: 90 },
+            docura: { rotulo: "Doce / Suave", nivel: 82 },
+            frescor: { rotulo: "Equilibrado", nivel: 66 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "DOC Vinho Verde (Minho), Portugal",
+            terroir: "Noroeste de Portugal com clima atlântico que garante acidez natural mesmo em vinhos com alto açúcar residual.",
+            uvas: "Loureiro, Arinto e Trajadura",
+            produtor: "Enoport Wines",
+            safra: "Não Safrado",
+            metodo: "Interrupção da fermentação pelo frio para preservar o açúcar natural das uvas, mantendo apenas 9% de álcool.",
+            sensoriais: "Amarelo claro brilhante; aromas de abacaxi, manga, pêssego em calda e flores brancas; boca doce, cremosa e refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Enoport Wines — grupo vitivinícola português com casas históricas desde o século XIX.",
+            analiseTecnica: "Teor alcoólico: 9% vol. | Estilo: Branco Doce / Suave (Sweet) | DOC Vinho Verde | 750ml.",
+            avaliacoes: "Muito procurado por quem prefere vinhos suaves portugueses de baixa graduação alcoólica.",
+            precoMedioMercado: "R$ 45 a R$ 75 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Versão doce da icônica linha Calamares, identificada pela garrafa arredondada verde-turquesa com polvo alaranjado."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Ideal para quem ama vinhos suaves/doces e evita vinhos secos ou ácidos.",
+            historicoPublico: "Grande aceitação entre iniciantes e apreciadores de vinho suave.",
+            rejeicoesQueEvita: "Zero secura, zero amargor e baixíssimo álcool (9%).",
+            preferenciasAtendidas: "Doçura frutada tropical, maciez e frescor equilibrado."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Culinária oriental agridoce (frango xadrez, lombo agridoce, tailandesa leve)",
+                "Queijo brie, camembert ou gorgonzola suave com geleia de abacaxi/damasco",
+                "Saladas com manga, castanhas e molho de mel e mostarda"
+            ],
+            harmonizacaoDoce: [
+                "Torta de abacaxi, pêssego ou cheesecake de maracujá",
+                "Mousse de maracujá, pavê de pêssego ou sorvete com frutas",
+                "Pudim de leite condensado, quindim ou bolo de coco gelado"
+            ],
+            ocasiao: "Hora da sobremesa, tarde na piscina ou comida chinesa/tailandesa em casa.",
+            companhia: "Amigos, família ou quem prefere vinhos suaves e docinhos.",
+            temperatura: "6 °C a 8 °C (1h a 1h30 na geladeira antes de servir).",
+            horario: "Tarde quente, pós-almoço ou momento sobremesa à noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Atender o público de vinho branco doce/suave com um DOC português leve."
+        }
     }
 
     // =========================================================================

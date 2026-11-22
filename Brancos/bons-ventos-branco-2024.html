@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons Ventos Branco 2024 | ENNOVIN • Adega VINHO24H Residencial Portal das Hortênsias</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: { 50: '#FDFCFA', 100: '#FAF8F5', 200: '#F3EFEA', 300: '#EAE5DC' },
+                        citrus: { 50: '#FBF8EB', 100: '#F6EED2', 700: '#9A7818', 800: '#7D5E10', 900: '#574108' },
+                        lisboa: { gold: '#C59B27', amber: '#E5B83B', light: '#FBF6E6' }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bottle-shadow {
+            filter: drop-shadow(0 25px 30px rgba(70, 50, 10, 0.22));
+            transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .bottle-container:hover .bottle-shadow { transform: translateY(-6px) scale(1.02); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fadeIn 0.35s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-cream-100 text-stone-800 font-sans antialiased selection:bg-citrus-800 selection:text-white">
+
+    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-cream-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+            <a href="../index.html" class="flex items-center gap-3 group" title="Voltar para a Carta de Vinhos">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-citrus-800 text-white flex items-center justify-center shadow-sm group-hover:bg-citrus-900 transition-colors">
+                    <i class="ph-fill ph-wine text-lg sm:text-xl text-lisboa-amber"></i>
+                </div>
+                <div>
+                    <span class="block text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-citrus-800">ENNOVIN • Unidade</span>
+                    <span class="font-serif text-lg sm:text-xl font-bold text-stone-900 tracking-tight">Adega VINHO24H</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-2 sm:gap-3">
+                <span class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-lisboa-light border border-lisboa-gold/30 text-stone-800 text-xs font-semibold">
+                    <i class="ph-fill ph-tag text-lisboa-gold text-sm"></i>
+                    Preço Único • Autoatendimento 24h
+                </span>
+                <a href="../index.html" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-citrus-800 hover:bg-citrus-900 text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm">
+                    <i class="ph-bold ph-arrow-left text-sm"></i>
+                    <span>Carta</span>
+                </a>
+                <button onclick="copyPageLink()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white hover:bg-cream-200 border border-cream-300 text-stone-700 text-xs sm:text-sm font-medium transition-colors shadow-sm">
+                    <i class="ph ph-share-network text-base text-citrus-800"></i>
+                    <span class="hidden sm:inline">Compartilhar</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-10 sm:pb-16">
+            <div class="bg-white rounded-3xl border border-cream-300 shadow-sm overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    <div class="lg:col-span-5 relative min-h-[420px] sm:min-h-[520px] flex items-center justify-center p-8 sm:p-12 overflow-hidden bg-cream-200 bottle-container">
+                        <img
+                            src="./Imagens/regiao-lisboa-bons-ventos.jpg"
+                            alt="Quinta de vinhedos tradicionais em Alenquer, Lisboa, Portugal"
+                            class="absolute inset-0 w-full h-full object-cover object-center opacity-40 scale-105 transition-transform duration-700"
+                            onerror="this.style.display='none'"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-b from-cream-100/75 via-cream-100/50 to-cream-200/90"></div>
+                        <div class="absolute w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-lisboa-gold/15 blur-xl"></div>
+
+                        <div class="absolute top-5 left-5 z-10 bg-white/90 backdrop-blur-sm border border-cream-300 px-3.5 py-1.5 rounded-full shadow-sm">
+                            <span class="text-xs font-bold tracking-wider uppercase text-stone-700">Branco Seco • 750ml</span>
+                        </div>
+
+                        <div class="relative z-10 flex flex-col items-center">
+                            <img
+                                src="./Imagens/BONS VENTOS BRANCO 2024.png"
+                                alt="Garrafa de Vinho Bons Ventos Branco 2024"
+                                class="h-[340px] sm:h-[430px] w-auto object-contain bottle-shadow"
+                                onerror="this.onerror=null; this.src='https://placehold.co/320x680/7D5E10/FAF8F5?text=Bons+Ventos%0ABranco+2024';"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-stone-600 mb-3">
+                                <span class="inline-flex items-center gap-1.5 bg-cream-100 border border-cream-300 px-3 py-1 rounded-full">
+                                    <span>🇵🇹</span> Lisboa, Portugal
+                                </span>
+                                <span class="text-stone-400">•</span>
+                                <span>Vinho Regional Lisboa</span>
+                            </div>
+
+                            <div class="inline-flex items-center gap-2 bg-lisboa-light border border-lisboa-gold/40 text-stone-900 px-3.5 py-1.5 rounded-xl mb-4">
+                                <span class="text-base">🏅</span>
+                                <span class="text-xs sm:text-sm font-bold text-stone-800">
+                                    Casa Santos Lima • Linha Premiada "Best Buy" Internacional
+                                </span>
+                            </div>
+
+                            <h1 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-stone-900 leading-[1.15] mb-4">
+                                Bons Ventos Branco 2024
+                            </h1>
+
+                            <p class="text-base sm:text-lg text-stone-600 leading-relaxed mb-6">
+                                <strong class="text-citrus-800 font-semibold">Vibrante, aromático e muito versátil:</strong> um branco português seco que mistura limão, abacaxi, maçã verde e jasmim com textura sutilmente cremosa — campeão em agradar à mesa!
+                            </p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mb-8">
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Estilo</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">Branco Seco</span>
+                                    <span class="block text-[11px] text-citrus-800 font-medium">Cítrico & Floral</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Álcool</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">12,5% vol.</span>
+                                    <span class="block text-[11px] text-stone-500">Equilibrado</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Temperatura</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">6°C a 8°C</span>
+                                    <span class="block text-[11px] text-stone-500">Bem gelado</span>
+                                </div>
+                                <div class="bg-cream-100 border border-cream-300 rounded-2xl p-3 text-center">
+                                    <span class="block text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Produtor</span>
+                                    <span class="block text-xs sm:text-sm font-bold text-stone-900 mt-0.5">Santos Lima</span>
+                                    <span class="block text-[11px] text-stone-500">Portugal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-citrus-800 text-white rounded-2xl p-5 sm:p-6 shadow-md relative overflow-hidden">
+                            <div class="absolute -right-6 -bottom-6 opacity-10">
+                                <i class="ph-fill ph-wine text-9xl"></i>
+                            </div>
+                            <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                <div>
+                                    <div class="inline-flex items-center gap-1.5 text-lisboa-amber text-xs font-bold uppercase tracking-wider mb-1">
+                                        <i class="ph-fill ph-sparkle"></i>
+                                        Experiência Adega VINHO24H
+                                    </div>
+                                    <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">Preço Único da Casa</h2>
+                                    <p class="text-citrus-100 text-xs sm:text-sm mt-1">
+                                        Sem surpresas na hora de escolher: pegue na adega, escaneie e leve em segundos.
+                                    </p>
+                                </div>
+                                <a href="#harmonizacao" class="shrink-0 inline-flex items-center justify-center gap-2 bg-lisboa-gold hover:bg-lisboa-amber text-stone-950 font-bold text-sm px-5 py-3 rounded-xl transition-colors shadow-sm">
+                                    <span>Ver o que combina</span>
+                                    <i class="ph-bold ph-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-citrus-800">O que esperar na taça</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
+                        Por que você vai gostar deste branco?
+                    </h2>
+                    <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+                        Unindo uvas clássicas portuguesas como <strong>Arinto</strong> e <strong>Fernão Pires</strong> a um toque de <strong>Chardonnay</strong>, o <strong>Bons Ventos Branco</strong> entrega frescor atlântico e aroma intenso sem passar por madeira.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-citrus-50 text-citrus-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-eye text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Amarelo-palha com reflexos verde-limão</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Visual claro, limpo e vibrante que já anuncia sua refrescância.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-citrus-50 text-citrus-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-citrus text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Limão, abacaxi, maçã verde e jasmim</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Perfume expressivo misturando frutas cítricas e tropicais (<strong>limão, abacaxi, melão, pera</strong>) com flores brancas.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-cream-300">
+                            <div class="w-10 h-10 rounded-xl bg-citrus-50 text-citrus-800 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="ph-fill ph-smiley text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm sm:text-base">Cremosidade sutil e final limpo</h3>
+                                <p class="text-stone-600 text-sm mt-0.5">Seco, leve e muito fácil de beber: equilibra acidez cítrica viva com uma leve sensação macia na boca.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-citrus-50 border border-citrus-100 rounded-2xl p-4 sm:p-5 space-y-2">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <span class="text-xs font-bold uppercase tracking-wider text-citrus-800 flex items-center gap-1.5">
+                                    <i class="ph-fill ph-users-three text-base"></i>
+                                    Ideal para o seu paladar?
+                                </span>
+                                <span class="text-xs font-bold text-stone-700 bg-white px-2.5 py-0.5 rounded-full border border-citrus-100">
+                                    Seco • Tampa de Rosca Prática
+                                </span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                                <strong>Escolha certa</strong> se você procura um branco <strong>seco</strong> bem aromático, com acidez equilibrada (sem ser agressivo) e tampa de rosca super prática para abrir!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-white rounded-3xl border border-cream-300 p-6 sm:p-9 shadow-sm">
+                    <div class="flex items-center justify-between border-b border-cream-300 pb-4 mb-6">
+                        <div>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Mapa de Sabor</h3>
+                            <p class="text-xs sm:text-sm text-stone-500">Guia visual rápido para você acertar na escolha</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-cream-100 text-stone-700 text-xs font-bold border border-cream-300">Seco & Aromático</span>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Corpo (Peso na boca)</span>
+                                <span class="text-citrus-800">Leve a Médio</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-citrus-800 rounded-full" style="width: 42%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Bem leve</span><span>Equilibrado</span><span>Cremoso / Encorpado</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Maciez</span>
+                                <span class="text-citrus-800">Sutilmente Cremoso</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-citrus-800 rounded-full" style="width: 78%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Firme</span><span>Equilibrado</span><span>Super suave</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Doçura (Classificação: Seco)</span>
+                                <span class="text-citrus-800">Seco Frutado</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-lisboa-gold rounded-full" style="width: 15%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Totalmente seco</span><span>Meio seco</span><span>Vinho doce</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm font-bold text-stone-800 mb-1.5">
+                                <span>Frescor (Acidez)</span>
+                                <span class="text-citrus-800">Equilibrado e Cítrico</span>
+                            </div>
+                            <div class="w-full h-3 bg-cream-200 rounded-full overflow-hidden p-0.5">
+                                <div class="h-full bg-citrus-800 rounded-full" style="width: 80%"></div>
+                            </div>
+                            <div class="flex justify-between text-[11px] text-stone-400 mt-1">
+                                <span>Suave</span><span>Equilibrado</span><span>Bem vibrante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 bg-lisboa-light border border-lisboa-gold/35 rounded-2xl p-4 flex items-start gap-3">
+                        <i class="ph-fill ph-thermometer-cold text-2xl text-lisboa-gold shrink-0 mt-0.5"></i>
+                        <div class="text-xs sm:text-sm text-stone-800">
+                            <strong class="block font-bold text-stone-900">Dica de Ouro para servir:</strong>
+                            Deixe <strong>1 hora na geladeira</strong> (entre 6°C e 8°C). E por ter tampa de rosca, você abre sem precisar de saca-rolhas!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="harmonizacao" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="bg-white rounded-3xl border border-cream-300 p-6 sm:p-10 lg:p-12 shadow-sm">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-citrus-800">Na mesa ou no sofá</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Combina com o quê?</h2>
+                    <p class="text-stone-600 text-sm sm:text-base mt-2">
+                        Um verdadeiro coringa branco seco para comida japonesa, frutos do mar, aves e sobremesas com toque cítrico ou frutas frescas.
+                    </p>
+
+                    <div class="inline-flex p-1.5 bg-cream-200 rounded-full mt-6 border border-cream-300" role="tablist">
+                        <button onclick="filterPairing('all')" id="tab-all" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all bg-citrus-800 text-white shadow-sm">
+                            Todos os Pratos
+                        </button>
+                        <button onclick="filterPairing('salgado')" id="tab-salgado" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-stone-700 hover:text-stone-900">
+                            🍣 Salgados
+                        </button>
+                        <button onclick="filterPairing('doce')" id="tab-doce" class="px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-stone-700 hover:text-stone-900">
+                            🍐 Doces
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div id="card-salgado" class="bg-cream-100 rounded-2xl border border-cream-300 p-6 sm:p-7 animate-fade-in">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-11 h-11 rounded-2xl bg-citrus-800 text-white flex items-center justify-center text-xl shadow-sm">🍣</div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-citrus-800">Mar & Culinária Oriental</span>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Harmonizações Salgadas</h3>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-stone-800">
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-citrus-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Frutos do Mar & Japonês:</strong> Camarões, mariscos, sushi, sashimi e pratos leves da culinária oriental.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-citrus-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Peixes & Aves:</strong> Peixes grelhados, frango com ervas e saladas frescas completas.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-citrus-800 text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Queijos & Massas Leves:</strong> Queijo de cabra, queijos frescos e massas com molho pesto ou limão.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="card-doce" class="bg-cream-100 rounded-2xl border border-cream-300 p-6 sm:p-7 animate-fade-in">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-11 h-11 rounded-2xl bg-lisboa-gold text-stone-950 flex items-center justify-center text-xl shadow-sm">🍐</div>
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800">Sobremesas</span>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-stone-900">Harmonizações Doces</h3>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-stone-800">
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-lisboa-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Frutas Brancas & Tropicais:</strong> Pera, maçã verde, abacaxi grelhado ou salada de frutas frescas.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-lisboa-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Cítricos Leves:</strong> Torta de limão pouco doce ou crumble de maçã.</div>
+                            </li>
+                            <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border border-cream-300">
+                                <i class="ph-fill ph-check-circle text-lisboa-gold text-lg shrink-0 mt-0.5"></i>
+                                <div><strong>Biscoitos & Queijos Doces:</strong> Biscoitos amanteigados de limão ou queijo brie com mel suave.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-citrus-800 block mb-1">🗓️ Ocasião</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Noite de comida japonesa, peixe grelhado ou almoço de fim de semana.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-citrus-800 block mb-1">🥂 Companhia</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Casal, amigos na varanda ou almoço em família.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-citrus-800 block mb-1">☀️ Horário</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Almoço ensolarado, fim de tarde ou jantar leve.</p>
+                    </div>
+                    <div class="bg-cream-100 border border-cream-300 rounded-2xl p-4">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-citrus-800 block mb-1">❄️ Temperatura</span>
+                        <p class="text-xs sm:text-sm text-stone-700 font-medium">Bem gelado: 6°C a 8°C (~1 hora na geladeira antes de abrir).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <div class="relative rounded-3xl overflow-hidden bg-stone-900 text-white shadow-md">
+                <img
+                    src="./Imagens/regiao-lisboa-bons-ventos.jpg"
+                    alt="Quinta de vinhedos tradicionais em Alenquer, Lisboa, Portugal"
+                    class="absolute inset-0 w-full h-full object-cover object-center opacity-35"
+                    onerror="this.style.display='none'"
+                >
+                <div class="absolute inset-0 bg-gradient-to-r from-stone-950/95 via-stone-900/85 to-citrus-900/75"></div>
+
+                <div class="relative z-10 p-6 sm:p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-lisboa-amber text-xs font-bold uppercase tracking-wider">
+                            <span>🌬️</span> Curiosidade & Terroir
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold leading-tight">
+                            Os "bons ventos" do Atlântico em Alenquer
+                        </h2>
+                        <p class="text-stone-200 text-sm sm:text-base leading-relaxed">
+                            Maior produtora da região de Lisboa, a <strong>Casa Santos Lima</strong> criou a linha <strong>Quinta de Bons Ventos</strong> para traduzir o clima atlântico de suas vinhas em Alenquer — onde os ventos frescos que sopram do oceano mantêm as uvas saudáveis e com acidez natural vibrante.
+                        </p>
+                        <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+                            Constantemente premiada como referência de custo-benefício (<em>"Best Buy"</em>) em guias internacionais, a marca une 5 uvas em perfeito equilíbrio com fermentação 100% em inox.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 space-y-4">
+                        <h3 class="font-serif text-xl font-bold text-white border-b border-white/15 pb-3">Ficha Rápida do Rótulo</h3>
+                        <dl class="space-y-3 text-sm">
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Uvas:</dt>
+                                <dd class="font-semibold text-white text-right">Arinto, Fernão Pires, Vital, Chardonnay e Viosinho</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Região:</dt>
+                                <dd class="font-semibold text-white text-right">Vinho Regional Lisboa, Portugal</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Produtor:</dt>
+                                <dd class="font-semibold text-white text-right">Casa Santos Lima</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Amadurecimento:</dt>
+                                <dd class="font-semibold text-white text-right">100% Aço Inox (sem madeira)</dd>
+                            </div>
+                            <div class="flex justify-between gap-4">
+                                <dt class="text-stone-300">Teor Alcoólico:</dt>
+                                <dd class="font-semibold text-lisboa-amber text-right">12,5% vol. • Seco</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cream-200 border-t border-cream-300 mt-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-serif text-lg font-bold text-stone-900">ENNOVIN • Unidade parceira VINHO24H</p>
+                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">
+                    Curadoria descomplicada com preço único em todos os rótulos. Escolha, sirva-se e aproveite!
+                </p>
+            </div>
+            <div class="text-xs text-stone-500">Beba com moderação. Venda proibida para menores de 18 anos.</div>
+        </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-stone-900 text-white px-4 py-3 rounded-xl shadow-lg flex items-center gap-2.5 text-sm font-medium">
+        <i class="ph-fill ph-check-circle text-lisboa-amber text-lg"></i>
+        <span>Link da página copiado!</span>
+    </div>
+
+    <script>
+        function filterPairing(type) {
+            const cardSalgado = document.getElementById('card-salgado');
+            const cardDoce = document.getElementById('card-doce');
+            const tabAll = document.getElementById('tab-all');
+            const tabSalgado = document.getElementById('tab-salgado');
+            const tabDoce = document.getElementById('tab-doce');
+
+            [tabAll, tabSalgado, tabDoce].forEach(btn => {
+                btn.classList.remove('bg-citrus-800', 'text-white', 'shadow-sm');
+                btn.classList.add('text-stone-700');
+            });
+
+            if (type === 'all') {
+                tabAll.classList.add('bg-citrus-800', 'text-white', 'shadow-sm');
+                tabAll.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'block';
+                cardDoce.style.display = 'block';
+            } else if (type === 'salgado') {
+                tabSalgado.classList.add('bg-citrus-800', 'text-white', 'shadow-sm');
+                tabSalgado.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'block';
+                cardDoce.style.display = 'none';
+            } else if (type === 'doce') {
+                tabDoce.classList.add('bg-citrus-800', 'text-white', 'shadow-sm');
+                tabDoce.classList.remove('text-stone-700');
+                cardSalgado.style.display = 'none';
+                cardDoce.style.display = 'block';
+            }
+        }
+
+        function copyPageLink() {
+            const dummyInput = document.createElement('input');
+            dummyInput.value = window.location.href;
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummyInput);
+
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3000);
+        }
+    </script>
+</body>
+</html>
