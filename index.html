@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta de Vinhos | ENNOVIN • Unidade VINHO24H</title>
+    <title>Carta de Vinhos | ENNOVIN • Adega VINHO24H • Unidade Residencial Portal das Hortênsias</title>
 
-    <!-- Fontes Google: Playfair Display (Títulos editoriais) e Plus Jakarta Sans (Leitura limpa e moderna) -->
+    <!-- Fontes Google: Montserrat (Marca Vinho24h), Playfair Display (Títulos editoriais) e Plus Jakarta Sans (Leitura limpa e moderna) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         /* =====================================================================
@@ -29,6 +29,7 @@
 
             --fonte-titulo: 'Playfair Display', Georgia, serif;
             --fonte-texto: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --fonte-marca: 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             --sombra-card: 0 8px 24px rgba(28, 25, 23, 0.05);
             --sombra-hover: 0 16px 36px rgba(122, 22, 40, 0.12);
         }
@@ -86,44 +87,51 @@
 
         .header-inner {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            min-height: 74px;
-            gap: 16px;
+            min-height: 76px;
+            padding: 12px 0;
+            gap: 12px 20px;
         }
 
         .brand {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
-            line-height: 1.1;
+            line-height: 1.25;
+            max-width: 100%;
+            background-color: var(--cor-vinho-suave);
+            border: 1px solid rgba(122, 22, 40, 0.18);
+            border-radius: 999px;
+            padding: 8px 22px;
+            box-shadow: 0 2px 8px rgba(28, 25, 23, 0.05);
         }
 
         .brand-top {
             font-size: 0.72rem;
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.16em;
+            letter-spacing: 0.03em;
             color: var(--cor-vinho);
         }
 
         .brand-top span {
             font-weight: 500;
-            color: var(--cor-texto-secundario);
+            color: var(--cor-vinho);
         }
 
         .brand-main {
-            font-family: var(--fonte-titulo);
-            font-size: 1.48rem;
-            font-weight: 700;
-            color: var(--cor-texto-principal);
+            font-family: var(--fonte-marca);
+            font-size: 0.92rem;
+            font-weight: 800;
+            color: var(--cor-vinho);
             letter-spacing: -0.02em;
-            margin-top: 2px;
+            margin-top: 3px;
         }
 
         .nav-links {
             display: none;
             align-items: center;
-            gap: 24px;
+            gap: 20px;
         }
 
         .nav-links a {
@@ -141,23 +149,32 @@
         .header-badge {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            background-color: var(--cor-dourado-suave);
-            border: 1px solid rgba(197, 155, 39, 0.45);
-            color: #785A0A;
-            font-size: 0.75rem;
+            gap: 8px;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(197, 155, 39, 0.55);
+            color: var(--cor-texto-principal);
+            font-family: var(--fonte-marca);
+            font-size: 0.76rem;
             font-weight: 700;
-            padding: 6px 12px;
+            padding: 6px 14px;
             border-radius: 999px;
             white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(28, 25, 23, 0.05);
         }
 
-        @media (min-width: 820px) {
+        .header-badge-logo {
+            height: 18px;
+            width: auto;
+            object-fit: contain;
+            display: inline-block;
+        }
+
+        @media (min-width: 960px) {
             .nav-links {
                 display: flex;
             }
             .brand-main {
-                font-size: 1.65rem;
+                font-size: 1.08rem;
             }
         }
 
@@ -193,12 +210,13 @@
         }
 
         .hero-header h1 {
-            font-family: var(--fonte-titulo);
-            font-size: 2.15rem;
+            font-family: var(--fonte-marca);
+            font-size: 2.1rem;
+            font-weight: 800;
             line-height: 1.15;
             color: var(--cor-texto-principal);
             margin-bottom: 12px;
-            letter-spacing: -0.015em;
+            letter-spacing: -0.02em;
         }
 
         .hero-header p {
@@ -809,14 +827,22 @@
         }
 
         .footer-brand {
-            font-family: var(--fonte-titulo);
-            font-size: 1.35rem;
+            font-family: var(--fonte-texto);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
             color: #FFFFFF;
             margin-bottom: 8px;
         }
 
+        .footer-brand span {
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+
         .footer-copy {
-            font-size: 0.88rem;
+            font-family: var(--fonte-marca);
+            font-size: 0.92rem;
             margin-bottom: 8px;
         }
 
@@ -838,8 +864,8 @@
     <header class="header">
         <div class="container header-inner">
             <a href="#" class="brand">
-                <span class="brand-top">ENNOVIN <span>• Unidade</span></span>
-                <span class="brand-main">Adega VINHO24H</span>
+                <span class="brand-top">ENNOVIN <span>• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></span>
+                <span class="brand-main">Adega VINHO24H • Unidade Residencial Portal das Hortênsias</span>
             </a>
 
             <nav class="nav-links" aria-label="Coleções da Carta de Vinhos">
@@ -850,7 +876,8 @@
             </nav>
 
             <div class="header-badge">
-                <span>🏷️</span> Preço Único 24h
+                <img src="Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="header-badge-logo">
+                <span>- Valor único exclusivo R$49,90</span>
             </div>
         </div>
     </header>
@@ -861,8 +888,7 @@
     <section class="collections-hero">
         <div class="container">
             <div class="hero-header">
-                <span class="hero-kicker">Residencial Portal das Hortênsias • Preço Único</span>
-                <h1>Explore Nossa Carta de Vinhos</h1>
+                <h1>Explore Sua Carta Exclusiva de Vinhos</h1>
                 <p>
                     Escolha pelo estilo abaixo, compare uma prévia do sabor e das harmonizações de cada garrafa e clique para abrir a ficha completa do rótulo.
                 </p>
@@ -1061,9 +1087,10 @@
          ===================================================================== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-brand">ENNOVIN • Adega VINHO24H</div>
-            <p class="footer-copy">ENNOVIN — Unidade parceira VINHO24H • Residencial Portal das Hortênsias.</p>
-            <p class="footer-legal">Apreciação com responsabilidade. Venda e consumo proibidos para menores de 18 anos.</p>
+            <div class="footer-brand">ENNOVIN <span>• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></div>
+            <p class="footer-copy" style="color: #F5F5F4; font-weight: 700;">VINHO24H • Sua adega particular a qualquer hora</p>
+            <p class="footer-legal" style="margin-bottom: 6px;">© 2026 http://carta-ph.ennovin.com/</p>
+            <p class="footer-legal">Todos os direitos reservados. Reprodução proibida sem autorização. Todo o conteúdo deste site é protegido por leis de direitos autorais. Apreciação com responsabilidade. Venda e consumo proibidos para menores de 18 anos.</p>
         </div>
     </footer>
 

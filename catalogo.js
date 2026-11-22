@@ -1,6 +1,6 @@
 /**
  * =============================================================================
- * CATÁLOGO CENTRAL DA CARTA DE VINHOS — ENNOVIN • ADEGA VINHO24H
+ * CATÁLOGO CENTRAL DA CARTA DE VINHOS — ENNOVIN • Adega VINHO24H
  * Residencial Portal das Hortênsias (Atibaia)
  * =============================================================================
  *

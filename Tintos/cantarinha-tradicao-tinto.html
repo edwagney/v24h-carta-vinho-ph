@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -23,6 +23,7 @@
                     fontFamily: {
                         serif: ['"Playfair Display"', 'Georgia', 'serif'],
                         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        brand: ['"Montserrat"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
                     },
                     colors: {
                         cream: {
@@ -72,31 +73,22 @@
          CABEÇALHO DA MARCA (ENNOVIN • ADEGA VINHO24H)
          ===================================================================== -->
     <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-cream-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
-            <a href="../index.html" class="flex items-center gap-3 group" title="Voltar para a Carta de Vinhos">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[72px] py-3 flex flex-wrap items-center justify-between gap-3">
+            <a href="../index.html" class="inline-flex items-center gap-3 group bg-[#FDF2F4] border border-[#7A1628]/20 rounded-full px-4 sm:px-5 py-2 shadow-sm hover:border-[#7A1628]/35 transition-colors" title="Voltar para a Carta de Vinhos">
                 <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-wine-800 text-white flex items-center justify-center shadow-sm group-hover:bg-wine-900 transition-colors">
                     <i class="ph-fill ph-wine text-lg sm:text-xl text-alentejo-amber"></i>
                 </div>
-                <div>
-                    <span class="block text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-wine-800">
-                        ENNOVIN • Unidade
-                    </span>
-                    <span class="font-serif text-lg sm:text-xl font-bold text-stone-900 tracking-tight">
-                        Adega VINHO24H
-                    </span>
+                                <div>
+                    <span class="block text-[10px] sm:text-[11px] font-bold tracking-wide text-[#7A1628] leading-snug">ENNOVIN <span class="font-medium">• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></span>
+                    <span class="block font-brand text-xs sm:text-sm lg:text-base font-extrabold text-[#7A1628] tracking-tight leading-snug">Adega VINHO24H • Unidade Residencial Portal das Hortênsias</span>
                 </div>
             </a>
 
             <div class="flex items-center gap-2 sm:gap-3">
-                <span class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-alentejo-light border border-alentejo-gold/30 text-stone-800 text-xs font-semibold">
-                    <i class="ph-fill ph-tag text-alentejo-gold text-sm"></i>
-                    Preço Único • Autoatendimento 24h
+                                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-amber-400/50 text-stone-800 text-[11px] sm:text-xs font-brand font-bold shadow-sm">
+                    <img src="../Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="h-4 w-auto object-contain">
+                    <span>- Valor único exclusivo R$49,90</span>
                 </span>
-
-                <a href="../index.html" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-wine-800 hover:bg-wine-900 text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm">
-                    <i class="ph-bold ph-arrow-left text-sm"></i>
-                    <span>Carta</span>
-                </a>
 
                 <button onclick="copyPageLink()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white hover:bg-cream-200 border border-cream-300 text-stone-700 text-xs sm:text-sm font-medium transition-colors shadow-sm" title="Copiar link deste vinho">
                     <i class="ph ph-share-network text-base text-wine-800"></i>
@@ -111,6 +103,12 @@
              HERO SECTION DO VINHO
              ================================================================= -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-10 sm:pb-16">
+            <div class="mb-4 sm:mb-5">
+                <a href="../index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-cream-100 text-stone-800 border border-cream-300 shadow-sm text-xs sm:text-sm font-semibold transition-colors">
+                    <i class="ph ph-arrow-left text-base text-[#7A1628]"></i>
+                    <span>Voltar</span>
+                </a>
+            </div>
             <div class="bg-white rounded-3xl border border-cream-300 shadow-sm overflow-hidden">
                 <div class="grid grid-cols-1 lg:grid-cols-12">
 
@@ -195,13 +193,11 @@
                             </div>
                             <div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                 <div>
-                                    <div class="inline-flex items-center gap-1.5 text-alentejo-amber text-xs font-bold uppercase tracking-wider mb-1">
+                                    <div class="inline-flex items-center gap-1.5 text-alentejo-amber font-brand text-xs font-bold tracking-wide mb-1">
                                         <i class="ph-fill ph-sparkle"></i>
                                         Experiência Adega VINHO24H
                                     </div>
-                                    <h2 class="font-serif text-xl sm:text-2xl font-bold text-white">
-                                        Preço Único da Casa
-                                    </h2>
+                                    <h2 class="font-brand text-lg sm:text-xl font-extrabold text-white flex flex-wrap items-center gap-2"><span class="inline-flex items-center bg-white rounded-full px-2.5 py-1 shadow-sm"><img src="../Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="h-4 sm:h-5 w-auto object-contain"></span><span>• Valor único exclusivo R$49,90</span></h2>
                                     <p class="text-wine-100 text-xs sm:text-sm mt-1">
                                         Sem surpresas na hora de escolher: pegue na adega, escaneie e leve em segundos.
                                     </p>
@@ -543,16 +539,11 @@
     </main>
 
     <footer class="bg-cream-200 border-t border-cream-300 mt-10">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            <div>
-                <p class="font-serif text-lg font-bold text-stone-900">ENNOVIN • Unidade parceira VINHO24H</p>
-                <p class="text-xs sm:text-sm text-stone-600 mt-0.5">
-                    Curadoria descomplicada com preço único em todos os rótulos. Escolha, sirva-se e aproveite!
-                </p>
-            </div>
-            <div class="text-xs text-stone-500">
-                Beba com moderação. Venda proibida para menores de 18 anos.
-            </div>
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col items-center text-center gap-2">
+            <p class="text-[10px] sm:text-[11px] font-bold tracking-wide text-[#7A1628]">ENNOVIN <span class="font-medium">• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></p>
+            <p class="font-brand text-xs sm:text-sm font-extrabold text-stone-900">VINHO24H • Sua adega particular a qualquer hora</p>
+            <p class="text-[11px] sm:text-xs text-stone-600 mt-1">© 2026 http://carta-ph.ennovin.com/</p>
+            <p class="text-[11px] text-stone-500 max-w-3xl">Todos os direitos reservados. Reprodução proibida sem autorização. Todo o conteúdo deste site é protegido por leis de direitos autorais. Apreciação com responsabilidade. Venda e consumo proibidos para menores de 18 anos.</p>
         </div>
     </footer>
 
