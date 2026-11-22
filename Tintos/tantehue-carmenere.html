@@ -72,29 +72,17 @@
     <!-- =====================================================================
          CABEÇALHO DA MARCA (ENNOVIN • ADEGA VINHO24H)
          ===================================================================== -->
-    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md border-b border-cream-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[72px] py-3 flex flex-wrap items-center justify-between gap-3">
-            <a href="../index.html" class="inline-flex items-center gap-3 group bg-[#FDF2F4] border border-[#7A1628]/20 rounded-full px-4 sm:px-5 py-2 shadow-sm hover:border-[#7A1628]/35 transition-colors" title="Voltar para a Carta de Vinhos">
-                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-wine-800 text-white flex items-center justify-center shadow-sm group-hover:bg-wine-900 transition-colors">
-                    <i class="ph-fill ph-wine text-lg sm:text-xl text-andes-amber"></i>
-                </div>
-                                <div>
-                    <span class="block text-[10px] sm:text-[11px] font-bold tracking-wide text-[#7A1628] leading-snug">ENNOVIN <span class="font-medium">• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></span>
-                    <span class="block font-brand text-xs sm:text-sm lg:text-base font-extrabold text-[#7A1628] tracking-tight leading-snug">Adega VINHO24H • Unidade Residencial Portal das Hortênsias</span>
-                </div>
-            </a>
-
-            <div class="flex items-center gap-2 sm:gap-3">
-                                <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-amber-400/50 text-stone-800 text-[11px] sm:text-xs font-brand font-bold shadow-sm">
-                    <img src="../Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="h-4 w-auto object-contain">
-                    <span>- Valor único exclusivo R$49,90</span>
-                </span>
-
-                <button onclick="copyPageLink()" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white hover:bg-cream-200 border border-cream-300 text-stone-700 text-xs sm:text-sm font-medium transition-colors shadow-sm" title="Copiar link deste vinho">
-                    <i class="ph ph-share-network text-base text-wine-800"></i>
-                    <span class="hidden sm:inline">Compartilhar</span>
-                </button>
+    <header class="relative md:sticky md:top-0 z-40 bg-white border-b border-cream-300">
+        <div class="bg-[#7A1628] text-white text-left text-[13.5px] sm:text-[17.5px] font-normal tracking-wide py-2.5 sm:py-3.5">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <strong class="font-bold">ENNOVIN</strong> • Conectando momentos de vida e vinhos com sensibilidade e inteligência
             </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[58px] py-2 sm:py-2.5 flex items-center justify-center">
+            <a href="../index.html" class="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 group" title="Voltar para a Carta de Vinhos">
+                <img src="../Imagens%20Logo/Com%20slogan%20fundo%20branco.png" alt="VINHO24H - Sua Adega Particular, A Qualquer Hora" class="h-[26px] sm:h-[30px] w-auto object-contain group-hover:opacity-85 transition-opacity">
+                <span class="inline-flex items-center px-3 sm:px-3.5 py-1 rounded-full bg-[#FDF2F4] border border-[#7A1628]/15 font-brand text-[10px] sm:text-xs font-bold text-[#7A1628] uppercase tracking-wider">UNIDADE RESIDENCIAL PORTAL DAS HORTÊNSIAS</span>
+            </a>
         </div>
     </header>
 
@@ -102,18 +90,22 @@
         <!-- =================================================================
              HERO SECTION DO VINHO (SPLIT LAYOUT)
              ================================================================= -->
-        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-10 sm:pb-16">
-            <div class="mb-4 sm:mb-5">
-                <a href="../index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-cream-100 text-stone-800 border border-cream-300 shadow-sm text-xs sm:text-sm font-semibold transition-colors">
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-10 sm:pt-8 sm:pb-16">
+            <div class="mb-4 sm:mb-5 flex items-center justify-between gap-3">
+                <a href="../index.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-cream-100 text-stone-800 border border-cream-300 shadow-sm text-xs sm:text-sm font-semibold transition-colors">
                     <i class="ph ph-arrow-left text-base text-[#7A1628]"></i>
                     <span>Voltar</span>
                 </a>
+                <button onclick="copyPageLink()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-cream-100 border border-cream-300 text-stone-700 text-xs sm:text-sm font-semibold transition-colors shadow-sm" title="Copiar link deste vinho">
+                    <i class="ph ph-share-network text-base text-[#7A1628]"></i>
+                    <span>Compartilhar</span>
+                </button>
             </div>
             <div class="bg-white rounded-3xl border border-cream-300 shadow-sm overflow-hidden">
                 <div class="grid grid-cols-1 lg:grid-cols-12">
 
                     <!-- COLUNA ESQUERDA: GARRAFA + PAISAGEM DO VALE CENTRAL E ANDES -->
-                    <div class="lg:col-span-5 relative min-h-[420px] sm:min-h-[520px] flex items-center justify-center p-8 sm:p-12 overflow-hidden bg-cream-200 bottle-container">
+                    <div class="lg:col-span-5 relative min-h-[320px] sm:min-h-[520px] flex items-center justify-center p-6 sm:p-12 overflow-hidden bg-cream-200 bottle-container">
                         <img
                             src="./Imagens/regiao-vale-central-chile.jpg"
                             alt="Vinhedos no Vale Central do Chile com a Cordilheira dos Andes ao fundo"
@@ -131,7 +123,7 @@
                             <img
                                 src="./Imagens/TANTEHUE CARMENERE.png"
                                 alt="Garrafa de Vinho Tantehue Carménère"
-                                class="h-[340px] sm:h-[430px] w-auto object-contain bottle-shadow"
+                                class="h-[260px] sm:h-[430px] w-auto object-contain bottle-shadow"
                                 onerror="this.onerror=null; this.src='https://placehold.co/320x680/6E1423/FAF8F5?text=Tantehue%0ACarmenere';"
                             >
                         </div>
@@ -541,7 +533,7 @@
     <footer class="bg-cream-200 border-t border-cream-300 mt-10">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex flex-col items-center text-center gap-2">
             <p class="text-[10px] sm:text-[11px] font-bold tracking-wide text-[#7A1628]">ENNOVIN <span class="font-medium">• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></p>
-            <p class="font-brand text-xs sm:text-sm font-extrabold text-stone-900">VINHO24H • Sua adega particular a qualquer hora</p>
+            <p class="font-brand text-[10px] sm:text-[11px] font-bold tracking-wide text-stone-900">VINHO24H <span class="font-medium">• Sua adega particular a qualquer hora</span></p>
             <p class="text-[11px] sm:text-xs text-stone-600 mt-1">© 2026 http://carta-ph.ennovin.com/</p>
             <p class="text-[11px] text-stone-500 max-w-3xl">Todos os direitos reservados. Reprodução proibida sem autorização. Todo o conteúdo deste site é protegido por leis de direitos autorais. Apreciação com responsabilidade. Venda e consumo proibidos para menores de 18 anos.</p>
         </div>

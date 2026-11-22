@@ -77,104 +77,118 @@
            3. CABEÇALHO SUPERIOR FIXO
            ===================================================================== */
         .header {
-            position: sticky;
-            top: 0;
+            position: relative;
             z-index: 100;
-            background-color: rgba(250, 248, 245, 0.96);
-            backdrop-filter: blur(10px);
+            background-color: #FFFFFF;
             border-bottom: 1px solid var(--cor-borda);
+        }
+
+        .announcement-bar {
+            background-color: #7A1628;
+            color: #FFFFFF;
+            text-align: left;
+            font-size: 0.86rem;
+            font-weight: 400;
+            letter-spacing: 0.015em;
+            padding: 9px 0;
+            line-height: 1.35;
+        }
+
+        .announcement-bar strong {
+            font-weight: 700;
         }
 
         .header-inner {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
-            min-height: 76px;
-            padding: 12px 0;
-            gap: 12px 20px;
+            justify-content: center;
+            min-height: 58px;
+            padding: 8px 0;
+            gap: 8px 16px;
         }
 
         .brand {
             display: inline-flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 6px 12px;
             line-height: 1.25;
             max-width: 100%;
-            background-color: var(--cor-vinho-suave);
-            border: 1px solid rgba(122, 22, 40, 0.18);
-            border-radius: 999px;
-            padding: 8px 22px;
-            box-shadow: 0 2px 8px rgba(28, 25, 23, 0.05);
         }
 
-        .brand-top {
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.03em;
-            color: var(--cor-vinho);
+        .brand-logo {
+            height: 26px;
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
-        .brand-top span {
-            font-weight: 500;
-            color: var(--cor-vinho);
-        }
-
-        .brand-main {
-            font-family: var(--fonte-marca);
-            font-size: 0.92rem;
-            font-weight: 800;
-            color: var(--cor-vinho);
-            letter-spacing: -0.02em;
-            margin-top: 3px;
-        }
-
-        .nav-links {
-            display: none;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--cor-texto-secundario);
-            transition: color 0.2s ease;
-            padding: 6px 0;
-        }
-
-        .nav-links a:hover {
-            color: var(--cor-vinho);
-        }
-
-        .header-badge {
+        .brand span {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            background-color: #FDF2F4;
+            border: 1px solid rgba(122, 22, 40, 0.14);
+            border-radius: 999px;
+            padding: 4px 12px;
+            font-family: var(--fonte-marca);
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--cor-vinho);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                position: sticky;
+                top: 0;
+            }
+            .announcement-bar {
+                font-size: 1.1rem;
+                padding: 13px 0;
+            }
+            .header-inner {
+                min-height: 66px;
+                padding: 10px 0;
+            }
+            .brand span {
+                padding: 5px 14px;
+                font-size: 0.72rem;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .hero-price-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
             background-color: #FFFFFF;
             border: 1px solid rgba(197, 155, 39, 0.55);
             color: var(--cor-texto-principal);
             font-family: var(--fonte-marca);
-            font-size: 0.76rem;
+            font-size: 0.84rem;
             font-weight: 700;
-            padding: 6px 14px;
+            padding: 7px 18px;
             border-radius: 999px;
-            white-space: nowrap;
-            box-shadow: 0 2px 8px rgba(28, 25, 23, 0.05);
+            margin: 6px auto 16px;
+            box-shadow: 0 2px 10px rgba(28, 25, 23, 0.05);
         }
 
         .header-badge-logo {
-            height: 18px;
+            height: 20px;
             width: auto;
             object-fit: contain;
             display: inline-block;
         }
 
         @media (min-width: 960px) {
-            .nav-links {
-                display: flex;
+            .brand-logo {
+                height: 30px;
             }
-            .brand-main {
-                font-size: 1.08rem;
+            .brand span {
+                font-size: 0.76rem;
             }
         }
 
@@ -184,13 +198,13 @@
         .collections-hero {
             background: linear-gradient(180deg, #FFFFFF 0%, var(--cor-fundo) 100%);
             border-bottom: 1px solid var(--cor-borda);
-            padding: 40px 0 44px;
+            padding: 24px 0 28px;
         }
 
         .hero-header {
             text-align: center;
             max-width: 760px;
-            margin: 0 auto 32px;
+            margin: 0 auto 20px;
         }
 
         .hero-kicker {
@@ -211,16 +225,16 @@
 
         .hero-header h1 {
             font-family: var(--fonte-marca);
-            font-size: 2.1rem;
+            font-size: 1.78rem;
             font-weight: 800;
             line-height: 1.15;
             color: var(--cor-texto-principal);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             letter-spacing: -0.02em;
         }
 
         .hero-header p {
-            font-size: 1rem;
+            font-size: 0.94rem;
             color: var(--cor-texto-secundario);
         }
 
@@ -228,8 +242,12 @@
             .collections-hero {
                 padding: 52px 0 48px;
             }
+            .hero-header {
+                margin-bottom: 32px;
+            }
             .hero-header h1 {
                 font-size: 2.85rem;
+                margin-bottom: 12px;
             }
             .hero-header p {
                 font-size: 1.08rem;
@@ -240,7 +258,7 @@
         .collection-directory {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
+            gap: 10px;
         }
 
         @media (min-width: 900px) {
@@ -254,12 +272,12 @@
             position: relative;
             background-color: var(--cor-cartao);
             border: 1px solid var(--cor-borda);
-            border-radius: 18px;
-            padding: 20px 18px;
+            border-radius: 16px;
+            padding: 14px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 12px;
+            gap: 8px;
             box-shadow: var(--sombra-card);
             transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
             overflow: hidden;
@@ -275,10 +293,12 @@
             background-color: var(--tile-accent, var(--cor-vinho));
         }
 
-        .collection-tile:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--sombra-hover);
-            border-color: var(--tile-accent, var(--cor-vinho));
+        @media (hover: hover) {
+            .collection-tile:hover {
+                transform: translateY(-3px);
+                box-shadow: var(--sombra-hover);
+                border-color: var(--tile-accent, var(--cor-vinho));
+            }
         }
 
         .tile-top {
@@ -289,37 +309,66 @@
         }
 
         .tile-icon {
-            width: 38px;
-            height: 38px;
-            border-radius: 11px;
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
             background-color: var(--tile-bg, var(--cor-vinho-suave));
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.05rem;
         }
 
         .tile-count {
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 700;
             color: var(--cor-texto-secundario);
             background-color: var(--cor-fundo);
             border: 1px solid var(--cor-borda);
-            padding: 3px 9px;
+            padding: 3px 8px;
             border-radius: 999px;
         }
 
         .collection-tile h2 {
             font-family: var(--fonte-titulo);
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: var(--cor-texto-principal);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .collection-tile p {
+            display: none;
             font-size: 0.84rem;
             color: var(--cor-texto-secundario);
             line-height: 1.45;
+        }
+
+        @media (min-width: 640px) {
+            .collection-directory {
+                gap: 14px;
+            }
+            .collection-tile {
+                border-radius: 18px;
+                padding: 20px 18px;
+                gap: 12px;
+            }
+            .tile-icon {
+                width: 38px;
+                height: 38px;
+                border-radius: 11px;
+                font-size: 1.2rem;
+            }
+            .tile-count {
+                font-size: 0.72rem;
+                padding: 3px 9px;
+            }
+            .collection-tile h2 {
+                font-size: 1.25rem;
+                margin-bottom: 4px;
+            }
+            .collection-tile p {
+                display: block;
+            }
         }
 
         .tile-link {
@@ -389,8 +438,15 @@
            6. SEÇÕES DAS 4 CATEGORIAS (SEMPRE ORGANIZADAS COMO GUARDA-CHUVA)
            ===================================================================== */
         .catalog-section {
-            padding: 46px 0 20px;
-            scroll-margin-top: 84px;
+            padding: 32px 0 16px;
+            scroll-margin-top: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .catalog-section {
+                padding: 46px 0 20px;
+                scroll-margin-top: 145px;
+            }
         }
 
         .section-header {
@@ -419,10 +475,13 @@
         }
 
         .section-header h2 {
-            font-family: var(--fonte-titulo);
-            font-size: 1.9rem;
+            font-family: var(--fonte-texto);
+            font-size: 0.92rem;
             font-weight: 700;
-            color: var(--cor-texto-principal);
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--cor-vinho);
+            line-height: 1.35;
         }
 
         .section-count {
@@ -473,20 +532,22 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
-        .wine-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--sombra-hover);
+        @media (hover: hover) {
+            .wine-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--sombra-hover);
+            }
         }
 
         /* Área Visual com Garrafa + Fundo Sutil da Região */
         .wine-card-media {
             position: relative;
-            height: 265px;
+            height: 235px;
             background: radial-gradient(circle at center, #FFFFFF 0%, #F2ECE3 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 16px;
             border-bottom: 1px solid var(--cor-borda);
             overflow: hidden;
         }
@@ -501,8 +562,10 @@
             transition: transform 0.5s ease;
         }
 
-        .wine-card:hover .wine-region-bg {
-            transform: scale(1.04);
+        @media (hover: hover) {
+            .wine-card:hover .wine-region-bg {
+                transform: scale(1.04);
+            }
         }
 
         .wine-media-overlay {
@@ -521,15 +584,27 @@
         }
 
         .wine-bottle-img {
-            max-height: 220px;
+            max-height: 195px;
             width: auto;
             object-fit: contain;
             filter: drop-shadow(0 14px 18px rgba(28, 12, 16, 0.22));
             transition: transform 0.3s ease;
         }
 
-        .wine-card:hover .wine-bottle-img {
-            transform: translateY(-4px) scale(1.03);
+        @media (min-width: 768px) {
+            .wine-card-media {
+                height: 265px;
+                padding: 20px;
+            }
+            .wine-bottle-img {
+                max-height: 220px;
+            }
+        }
+
+        @media (hover: hover) {
+            .wine-card:hover .wine-bottle-img {
+                transform: translateY(-4px) scale(1.03);
+            }
         }
 
         .wine-badge {
@@ -842,8 +917,13 @@
 
         .footer-copy {
             font-family: var(--fonte-marca);
-            font-size: 0.92rem;
+            font-size: 0.72rem;
+            letter-spacing: 0.03em;
             margin-bottom: 8px;
+        }
+
+        .footer-copy span {
+            font-weight: 500;
         }
 
         .footer-legal {
@@ -862,23 +942,14 @@
          CABEÇALHO SUPERIOR
          ===================================================================== -->
     <header class="header">
+        <div class="announcement-bar">
+            <div class="container"><strong>ENNOVIN</strong> • Conectando momentos de vida e vinhos com sensibilidade e inteligência</div>
+        </div>
         <div class="container header-inner">
-            <a href="#" class="brand">
-                <span class="brand-top">ENNOVIN <span>• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></span>
-                <span class="brand-main">Adega VINHO24H • Unidade Residencial Portal das Hortênsias</span>
+            <a href="#" class="brand" aria-label="VINHO24H - Unidade Residencial Portal das Hortênsias">
+                <img src="Imagens%20Logo/Com%20slogan%20fundo%20branco.png" alt="VINHO24H - Sua Adega Particular, A Qualquer Hora" class="brand-logo">
+                <span>UNIDADE RESIDENCIAL PORTAL DAS HORTÊNSIAS</span>
             </a>
-
-            <nav class="nav-links" aria-label="Coleções da Carta de Vinhos">
-                <a href="#tintos" onclick="irParaColecao('tintos')">Tintos</a>
-                <a href="#brancos" onclick="irParaColecao('brancos')">Brancos</a>
-                <a href="#roses" onclick="irParaColecao('roses')">Rosés</a>
-                <a href="#espumantes" onclick="irParaColecao('espumantes')">Espumantes</a>
-            </nav>
-
-            <div class="header-badge">
-                <img src="Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="header-badge-logo">
-                <span>- Valor único exclusivo R$49,90</span>
-            </div>
         </div>
     </header>
 
@@ -889,6 +960,10 @@
         <div class="container">
             <div class="hero-header">
                 <h1>Explore Sua Carta Exclusiva de Vinhos</h1>
+                <div class="hero-price-pill">
+                    <img src="Imagens%20Logo/Si%CC%81mbolo%20fundo%20branco.png" alt="VINHO24H" class="header-badge-logo">
+                    <span>Valor único Exclusivo • R$49,90</span>
+                </div>
                 <p>
                     Escolha pelo estilo abaixo, compare uma prévia do sabor e das harmonizações de cada garrafa e clique para abrir a ficha completa do rótulo.
                 </p>
@@ -971,9 +1046,8 @@
         <section id="tintos" class="catalog-section" data-category="tintos">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Coleção 01 • Seleção Especial</span>
                     <div class="section-title-row">
-                        <h2>Vinhos Tintos</h2>
+                        <h2>Coleção de Vinhos Tintos • Seleção Especial</h2>
                         <span class="section-count" id="count-tintos">Carregando...</span>
                     </div>
                     <p class="section-desc">
@@ -989,9 +1063,8 @@
         <section id="brancos" class="catalog-section" data-category="brancos">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Coleção 02 • Leveza & Frescor</span>
                     <div class="section-title-row">
-                        <h2>Vinhos Brancos</h2>
+                        <h2>Coleção de Vinhos Brancos • Leveza & Frescor</h2>
                         <span class="section-count" id="count-brancos">Carregando...</span>
                     </div>
                     <p class="section-desc">
@@ -1007,9 +1080,8 @@
         <section id="roses" class="catalog-section" data-category="roses">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Coleção 03 • Versatilidade na Taça</span>
                     <div class="section-title-row">
-                        <h2>Vinhos Rosés</h2>
+                        <h2>Coleção de Vinhos Rosés • Versatilidade na Taça</h2>
                         <span class="section-count" id="count-roses">Carregando...</span>
                     </div>
                     <p class="section-desc">
@@ -1025,9 +1097,8 @@
         <section id="espumantes" class="catalog-section" data-category="espumantes">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-kicker">Coleção 04 • Para Brindar</span>
                     <div class="section-title-row">
-                        <h2>Espumantes</h2>
+                        <h2>Coleção de Espumantes • Para Brindar</h2>
                         <span class="section-count" id="count-espumantes">Carregando...</span>
                     </div>
                     <p class="section-desc">
@@ -1088,7 +1159,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-brand">ENNOVIN <span>• Conectando momentos de vida e vinhos com sensibilidade e inteligência</span></div>
-            <p class="footer-copy" style="color: #F5F5F4; font-weight: 700;">VINHO24H • Sua adega particular a qualquer hora</p>
+            <p class="footer-copy" style="color: #F5F5F4; font-weight: 700;">VINHO24H <span>• Sua adega particular a qualquer hora</span></p>
             <p class="footer-legal" style="margin-bottom: 6px;">© 2026 http://carta-ph.ennovin.com/</p>
             <p class="footer-legal">Todos os direitos reservados. Reprodução proibida sem autorização. Todo o conteúdo deste site é protegido por leis de direitos autorais. Apreciação com responsabilidade. Venda e consumo proibidos para menores de 18 anos.</p>
         </div>
@@ -1218,7 +1289,7 @@
             const urlFallback = `https://placehold.co/260x540/${cfg.corPlaceholder}?text=${textoPlaceholder}`;
 
             const fundoRegiaoHtml = vinho.imagemRegiao
-                ? `<img src="${escaparHtml(vinho.imagemRegiao)}" alt="" class="wine-region-bg" onerror="this.style.display='none'">`
+                ? `<img src="${escaparHtml(vinho.imagemRegiao)}" alt="" class="wine-region-bg" loading="lazy" decoding="async" onerror="this.style.display='none'">`
                 : '';
 
             const seloHtml = vinho.seloDestaque
@@ -1247,6 +1318,8 @@
                     src="${caminhoImagem || urlFallback}"
                     alt="Garrafa ${escaparHtml(vinho.nome)}"
                     class="wine-bottle-img"
+                    loading="lazy"
+                    decoding="async"
                     onerror="this.onerror=null; this.src='${urlFallback}';"
                 >
             `;
