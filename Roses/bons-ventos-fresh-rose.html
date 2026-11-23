@@ -63,7 +63,7 @@
                     <i class="ph ph-arrow-left text-base text-[#7A1628]"></i>
                     <span>Voltar</span>
                 </a>
-                <button onclick="copyPageLink()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-cream-100 border border-cream-300 text-stone-700 text-xs sm:text-sm font-semibold transition-colors shadow-sm" title="Copiar link deste vinho">
+                <button onclick="openShareMenu()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-cream-100 border border-cream-300 text-stone-700 text-xs sm:text-sm font-semibold transition-colors shadow-sm" title="Copiar link deste vinho">
                     <i class="ph ph-share-network text-base text-[#7A1628]"></i>
                     <span>Compartilhar</span>
                 </button>
@@ -496,18 +496,7 @@
             }
         }
 
-        function copyPageLink() {
-            const dummyInput = document.createElement('input');
-            dummyInput.value = window.location.href;
-            document.body.appendChild(dummyInput);
-            dummyInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(dummyInput);
-
-            const toast = document.getElementById('toast');
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3000);
-        }
     </script>
+    <script src="../share.js" defer></script>
 </body>
 </html>

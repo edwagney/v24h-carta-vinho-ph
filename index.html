@@ -238,6 +238,30 @@
             color: var(--cor-texto-secundario);
         }
 
+        .hero-share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+            background-color: #FFFFFF;
+            border: 1px solid var(--cor-borda);
+            color: var(--cor-vinho);
+            font-family: var(--fonte-texto);
+            font-size: 0.84rem;
+            font-weight: 700;
+            padding: 9px 18px;
+            border-radius: 999px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(28, 25, 23, 0.05);
+            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .hero-share-btn:hover {
+            background-color: var(--cor-vinho-suave);
+            border-color: rgba(122, 22, 40, 0.25);
+        }
+
         @media (min-width: 768px) {
             .collections-hero {
                 padding: 52px 0 48px;
@@ -967,6 +991,10 @@
                 <p>
                     Escolha pelo estilo abaixo, compare uma prévia do sabor e das harmonizações de cada garrafa e clique para abrir a ficha completa do rótulo.
                 </p>
+                <button type="button" class="hero-share-btn" onclick="openShareMenu('catalog')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m15.4 6.5-6.8 4"/></svg>
+                    <span>Compartilhar Carta</span>
+                </button>
             </div>
 
             <!-- Diretório Visual das 4 Coleções -->
@@ -1422,6 +1450,7 @@
 
         renderizarCatalogo();
     </script>
+    <script src="share.js" defer></script>
 
 </body>
 </html>
