@@ -602,6 +602,146 @@ const CATALOGO_VINHOS = [
         }
     },
 
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: false,
+        categoria: "roses",
+        nome: "Foye Reserva Rosé 2025",
+        arquivoPagina: "foye-reserva-rose-2025.html",
+        arquivoImagem: "foye_reserva_rose_2025.png",
+        imagemRegiao: "Roses/Imagens/regiao-vale-central-chile-rose.jpg",
+        paisRegiao: "Vale do Maule, Chile",
+        bandeira: "🇨🇱",
+        seloDestaque: "🌸 Estilo Provence",
+        destaqueOuro: false,
+        resumoCard: "Rosé seco chileno de cor salmão pálida (Syrah e Malbec), leve e crocante, com aromas de morango, framboesa silvestre e hortelã.",
+        tags: ["Rosé Seco", "Syrah & Malbec", "Vale do Maule"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 32 },
+            maciez: { rotulo: "Suave e Limpo", nivel: 78 },
+            docura: { rotulo: "Seco Frutado", nivel: 14 },
+            frescor: { rotulo: "Vivo e Crocante", nivel: 82 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "D.O. Valle del Maule (Secano Interior), Chile",
+            terroir: "Vinhedos da Bouchon Family Wines entre as encostas da Cordilheira Costeira e terraços aluviais do Vale do Maule.",
+            uvas: "Syrah e Malbec",
+            produtor: "Bouchon Family Wines",
+            safra: "2025",
+            metodo: "Vinificação em tanques de aço inox para preservar frescor, cor salmão pálida e fruta pura, sem passagem por madeira.",
+            sensoriais: "Rosa-salmão pálida brilhante; aromas frescos de morango e framboesa silvestres com flores delicadas e leve hortelã; paladar leve, seco, crocante e refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Bouchon Family Wines — vinícola familiar tradicional no Vale do Maule desde 1887.",
+            analiseTecnica: "Teor alcoólico: 12,0% a 12,5% vol. | Estilo: Rosé Seco | Tampa de rosca | 750ml.",
+            avaliacoes: "Muito apreciado pela delicadeza estilo Provence e acidez crocante.",
+            precoMedioMercado: "R$ 45 a R$ 70 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "'Foye' (ou Canelo) é a árvore sagrada do povo indígena Mapuche do sul do Chile, celebrada no rótulo."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem prefere rosés secos, elegantes e bem refrescantes.",
+            historicoPublico: "Forte apelo em dias quentes e combinações com comida japonesa.",
+            rejeicoesQueEvita: "Zero dulçor sobrando e zero peso de madeira.",
+            preferenciasAtendidas: "Frutas vermelhas silvestres, leveza e acidez viva."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Sushi, sashimi e salmão grelhado",
+                "Frutos do mar, saladas frescas e culinária asiática leve",
+                "Crostinis, queijos cremosos (brie, cabra)"
+            ],
+            harmonizacaoDoce: [
+                "Morangos e framboesas frescas",
+                "Panna cotta leve ou cheesecake pouco doce",
+                "Sorbet de framboesa ou torta leve de limão"
+            ],
+            ocasiao: "Aperitivo na varanda, noite de comida japonesa ou almoço ensolarado.",
+            companhia: "Amigos, casal ou fim de tarde refrescante.",
+            temperatura: "8 °C a 10 °C (45 a 60 minutos na geladeira antes de servir).",
+            horario: "Almoço, happy hour ou jantar leve.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Oferecer um rosé chileno seco elegante no estilo Provence (ainda não abastecido)."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: false,
+        categoria: "roses",
+        nome: "Casas Del Toqui Single Estate D.O. Central Valley Rosé 2025",
+        arquivoPagina: "casas-del-toqui-single-estate-rose-2025.html",
+        arquivoImagem: "casas_del_toqui_single_estate_d_o_central_valley_rose_2025.png",
+        imagemRegiao: "Roses/Imagens/regiao-vale-central-chile-rose.jpg",
+        paisRegiao: "Vale Central, Chile",
+        bandeira: "🇨🇱",
+        seloDestaque: "🍓 100% Cabernet Sauv.",
+        destaqueOuro: false,
+        resumoCard: "Rosé seco chileno 100% Cabernet Sauvignon, macio e frutado, com notas de morango, amora, maçã vermelha e final refrescante.",
+        tags: ["Rosé Seco", "100% Cabernet", "Vegano"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve a Médio", nivel: 38 },
+            maciez: { rotulo: "Macio e Cremoso", nivel: 80 },
+            docura: { rotulo: "Seco Frutado", nivel: 15 },
+            frescor: { rotulo: "Refrescante", nivel: 78 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "D.O. Central Valley, Chile",
+            terroir: "Vinhedos próprios da Viña Casas del Toqui no Vale Central chileno.",
+            uvas: "100% Cabernet Sauvignon",
+            produtor: "Viña Casas del Toqui",
+            safra: "2025",
+            metodo: "Maceração curta com as cascas e fermentação em tanques de aço inox, sem passagem por carvalho (adequado para veganos).",
+            sensoriais: "Rosa claro a médio brilhante; aromas expressivos de morango, amora, maçã vermelha e sutil especiaria; paladar leve, cremoso e refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Viña Casas del Toqui — fundada em 1994 por aliança franco-chilena com o Château Larose Trintaudon (Bordeaux).",
+            analiseTecnica: "Teor alcoólico: 13,0% vol. | Estilo: Rosé Seco | Vegano | Tampa de rosca | 750ml.",
+            avaliacoes: "Rosé versátil de vinhedo único muito bem aceito no varejo brasileiro.",
+            precoMedioMercado: "R$ 40 a R$ 65 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Série Single Estate celebrando a pureza varietal da uva Cabernet Sauvignon em versão rosé."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem gosta de rosé seco com fruta vermelha expressiva e toque levemente cremoso.",
+            historicoPublico: "Excelente aceitação com aperitivos, frutos do mar e pizzas leves.",
+            rejeicoesQueEvita: "Sem madeira, sem adstringência e vegano.",
+            preferenciasAtendidas: "Morango maduro, cremosidade equilibrada e final limpo."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Camarão na manteiga, frutos do mar e sushi",
+                "Pizzas de massa leve e aves grelhadas",
+                "Saladas frescas, queijo brie e bruschettas"
+            ],
+            harmonizacaoDoce: [
+                "Morangos, cerejas e maçã vermelha",
+                "Cheesecake leve de frutas vermelhas",
+                "Pavlova ou mousse leve de chocolate branco"
+            ],
+            ocasiao: "Jantar leve, pizza em casa, sushi ou recepção na varanda.",
+            companhia: "Casal, amigos ou família em noite descontraída.",
+            temperatura: "8 °C a 9 °C (1 hora na geladeira antes de servir).",
+            horario: "Almoço leve, happy hour ou jantar.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Ampliar a linha de rosés chilenos secos da carta (ainda não abastecido)."
+        }
+    },
+
     // =========================================================================
     // ESPUMANTES
     // =========================================================================
@@ -1165,6 +1305,146 @@ const CATALOGO_VINHOS = [
             horario: "Tarde quente, pós-almoço ou momento sobremesa à noite.",
             orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
             intencao: "Atender o público de vinho branco doce/suave com um DOC português leve."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: false,
+        categoria: "brancos",
+        nome: "Alfacinha Regional Lisboa Branco 2024",
+        arquivoPagina: "alfacinha-branco-2024.html",
+        arquivoImagem: "alfacinha_regional_lisboa_branco_2024.png",
+        imagemRegiao: "Brancos/Imagens/regiao-lisboa-cidade.jpg",
+        paisRegiao: "Lisboa, Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🚋 Lisboa Clássico",
+        destaqueOuro: false,
+        resumoCard: "Branco português seco de Lisboa (50% Fernão Pires e 50% Arinto), fresco e aromático, com notas de limão, flores brancas e frutas frescas.",
+        tags: ["Branco Seco", "Fernão Pires & Arinto", "Sem Madeira"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 34 },
+            maciez: { rotulo: "Fluido e Equilibrado", nivel: 78 },
+            docura: { rotulo: "Seco Frutado", nivel: 16 },
+            frescor: { rotulo: "Vivo e Refrescante", nivel: 80 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vinho Regional Lisboa (IG Lisboa), Portugal",
+            terroir: "Região atlântica ao redor de Lisboa garantindo acidez fresca e aromas cítricos limpos.",
+            uvas: "50% Fernão Pires e 50% Arinto",
+            produtor: "Parras Wines (Enólogo Carlos Eduardo)",
+            safra: "2024",
+            metodo: "Fermentado em cubas de aço inoxidável de pequena capacidade, sem passagem por madeira.",
+            sensoriais: "Amarelo claro com reflexos esverdeados; aromas de frutas cítricas, flores brancas e frutas frescas; boca leve, equilibrada e final cítrico refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Parras Wines — grupo português fundado por Luís Parras em 2010, com atuação destacada em Lisboa.",
+            analiseTecnica: "Teor alcoólico: 12,5% vol. | Estilo: Branco Seco | Acidez Total ~5,5 g/L | pH ~3,3 | 750ml.",
+            avaliacoes: "Muito bem avaliado no varejo brasileiro como branco português leve e gastronômico.",
+            precoMedioMercado: "R$ 40 a R$ 60 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Faz dupla com o Alfacinha Tinto homenageando o tradicional elétrico amarelo e os 'alfacinhas' de Lisboa."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem gosta de brancos secos leves, cítricos e fáceis de beber.",
+            historicoPublico: "Forte sinergia com a linha Alfacinha já querida na adega.",
+            rejeicoesQueEvita: "Zero madeira e sem acidez agressiva.",
+            preferenciasAtendidas: "Cítrico fresco, flores brancas e leveza."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Peixes grelhados, frutos do mar e ceviche leve",
+                "Saladas frescas, aves com ervas e risoto de limão",
+                "Queijos cremosos, queijo de cabra e bruschettas"
+            ],
+            harmonizacaoDoce: [
+                "Salada de frutas com pera, maçã verde e abacaxi",
+                "Torta leve de limão ou bolo de laranja",
+                "Queijo brie com mel suave e amêndoas"
+            ],
+            ocasiao: "Almoço de fim de semana, jantar leve com peixe ou aperitivo na varanda.",
+            companhia: "Casal, amigos ou família em dias quentes.",
+            temperatura: "8 °C a 10 °C (45 a 60 minutos na geladeira antes de abrir).",
+            horario: "Almoço, fim de tarde ou início de noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Completar a dupla Alfacinha com o rótulo branco da safra 2024 (ainda não abastecido)."
+        }
+    },
+
+    {
+        // --- Controle e Vitrine (index.html) ---
+        ativo: false,
+        categoria: "brancos",
+        nome: "Alecrim Branco",
+        arquivoPagina: "alecrim-branco.html",
+        arquivoImagem: "alecrim_branco.png",
+        imagemRegiao: "Brancos/Imagens/regiao-alentejo-portugal.jpg",
+        paisRegiao: "Portugal",
+        bandeira: "🇵🇹",
+        seloDestaque: "🌿 Uvas Nativas",
+        destaqueOuro: false,
+        resumoCard: "Branco seco português da Ségur Estates, jovem e macio, com notas de frutas cítricas e flores brancas para pratos leves e frutos do mar.",
+        tags: ["Branco Seco", "Castas Nativas", "Gastronômico"],
+        perfilSensorial: {
+            corpo: { rotulo: "Leve", nivel: 34 },
+            maciez: { rotulo: "Macio e Equilibrado", nivel: 78 },
+            docura: { rotulo: "Seco Frutado", nivel: 15 },
+            frescor: { rotulo: "Refrescante", nivel: 76 }
+        },
+
+        // --- 1. Conhecimento do Vinho ---
+        conhecimentoVinho: {
+            denominacao: "Vinho Branco de Portugal (Ségur Estates)",
+            terroir: "Vinhedos portugueses com excelente exposição solar e frescor natural para brancos jovens.",
+            uvas: "Blend de uvas brancas nativas portuguesas",
+            produtor: "Ségur Estates",
+            safra: "Não Safrado / Corrente",
+            metodo: "Fermentação alcoólica em tanques de aço inox com controle de temperatura, sem passagem por barricas de madeira.",
+            sensoriais: "Amarelo-palha límpido; aromas frescos de frutas cítricas e flores brancas; boca leve, jovem, macia e com acidez refrescante."
+        },
+
+        // --- 2. Conhecimento sobre o Rótulo ---
+        conhecimentoRotulo: {
+            fichaProdutor: "Ségur Estates — grupo vitivinícola ligado historicamente a descendentes da família do Marquês de Ségur (Bordeaux) com projetos em Portugal.",
+            analiseTecnica: "Teor alcoólico: 12,0% a 12,3% vol. | Estilo: Branco Seco | Guarda: 2 a 3 anos | 750ml.",
+            avaliacoes: "Reconhecido no varejo brasileiro como branco seco leve e versátil para o dia a dia.",
+            precoMedioMercado: "R$ 40 a R$ 60 no varejo brasileiro (uso interno para curadoria; na adega segue o preço único da casa).",
+            historiaRotulo: "Rótulo minimalista ilustrado com um ramo de alecrim amarrado com barbante rústico, celebrando a culinária portuguesa."
+        },
+
+        // --- 3. Conhecimento do Indivíduo ---
+        conhecimentoIndividuo: {
+            paladar: "Para quem busca um branco português seco leve, macio e fácil de harmonizar.",
+            historicoPublico: "Muito procurado para frutos do mar e pratos cotidianos.",
+            rejeicoesQueEvita: "Zero madeira pesada e sem dulçor enjoativo.",
+            preferenciasAtendidas: "Aroma cítrico/floral limpo, maciez e boa acidez."
+        },
+
+        // --- 4. Contexto ---
+        contexto: {
+            harmonizacaoSalgada: [
+                "Camarão grelhado, moqueca e bolinho de bacalhau",
+                "Risoto caprese, talharim ao molho branco e tomates recheados",
+                "Peixes grelhados, saladas e queijos frescos de massa mole"
+            ],
+            harmonizacaoDoce: [
+                "Maçã verde, pera e melão",
+                "Torta leve de limão ou sorbet cítrico",
+                "Biscoitos amanteigados finos"
+            ],
+            ocasiao: "Almoço de peixe ou moqueca, petiscos na varanda ou jantar leve.",
+            companhia: "Casal, família ou amigos.",
+            temperatura: "8 °C a 10 °C (1 hora na geladeira antes de servir).",
+            horario: "Almoço de fim de semana, tarde quente ou início de noite.",
+            orcamento: "Preço único da Adega VINHO24H (autoatendimento no condomínio).",
+            intencao: "Ampliar os brancos secos portugueses da carta (ainda não abastecido)."
         }
     }
 
