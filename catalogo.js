@@ -674,7 +674,7 @@ const CATALOGO_VINHOS = [
 
     {
         // --- Controle e Vitrine (index.html) ---
-        ativo: false,
+        ativo: true,
         categoria: "roses",
         nome: "Casas Del Toqui Single Estate D.O. Central Valley Rosé 2025",
         arquivoPagina: "casas-del-toqui-single-estate-rose-2025.html",
@@ -1310,7 +1310,7 @@ const CATALOGO_VINHOS = [
 
     {
         // --- Controle e Vitrine (index.html) ---
-        ativo: false,
+        ativo: true,
         categoria: "brancos",
         nome: "Alfacinha Regional Lisboa Branco 2024",
         arquivoPagina: "alfacinha-branco-2024.html",
@@ -1380,7 +1380,7 @@ const CATALOGO_VINHOS = [
 
     {
         // --- Controle e Vitrine (index.html) ---
-        ativo: false,
+        ativo: true,
         categoria: "brancos",
         nome: "Alecrim Branco",
         arquivoPagina: "alecrim-branco.html",
